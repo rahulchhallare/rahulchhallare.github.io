@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rahul Chhallare — AI Agent PM · Forward Deployed PM · Product Owner</title>
+<meta name="description" content="Rahul Chhallare — AI Product Manager, Forward Deployed AI Agent PM & Product Owner. Founder of 9 live products including AIAgentStudio.ai, AILearnX.com, MedPe.in. Perplexity AI Fellow. Ex-TVS Motor. MBA Germany.">
+<meta name="keywords" content="AI Product Manager, Forward Deployed PM, AI Agent PM, Product Owner, AIAgentStudio, Rahul Chhallare, Pune India, LLM Product, Perplexity AI Fellow">
+<meta name="author" content="Rahul Arun Chhallare">
+<!-- Open Graph — controls how link looks on LinkedIn, WhatsApp, Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rahul Chhallare — AI Agent PM · Forward Deployed PM · Product Owner">
+<meta property="og:description" content="Founder of 9 live AI products. Perplexity AI Fellow. Built AIAgentStudio.ai, AILearnX.com, MedPe.in &amp; more. Open to AI PM · Forward Deployed PM · Product Owner roles globally.">
+<meta property="og:url" content="https://rahulchhallare.github.io">
+<meta property="og:site_name" content="Rahul Chhallare Portfolio">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/176390768?v=4">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rahul Chhallare — AI Agent PM · Forward Deployed PM">
+<meta name="twitter:description" content="Founder of 9 live AI products. Perplexity AI Fellow. Built AIAgentStudio, AILearnX, MedPe &amp; more.">
+<meta name="twitter:image" content="https://avatars.githubusercontent.com/u/176390768?v=4">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0c0f14;--ink2:#1a2030;--ink3:#2d3748;--muted:#64748b;--faint:#94a3b8;
+  --rule:#e2e8f0;--rule2:#cbd5e1;--bg:#ffffff;--bg2:#f8fafc;--bg3:#f1f5f9;
+  --accent:#1e40af;--accent2:#3b82f6;--accent-l:#eff6ff;--accent-m:#bfdbfe;
+  --teal:#0f766e;--teal-l:#f0fdfa;--green:#15803d;--green-l:#f0fdf4;
+  --amber:#92400e;--amber-l:#fffbeb;--rose:#9f1239;--rose-l:#fff1f2;
+  --purple:#5b21b6;--purple-l:#f5f3ff;--sky:#0369a1;--sky-l:#f0f9ff;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:auto;}
+body{font-family:'Sora',sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+a{text-decoration:none;color:inherit;}
+
+@keyframes up{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.3;}}
+@keyframes reveal{from{clip-path:inset(0 100% 0 0);}to{clip-path:inset(0 0% 0 0);}}
+.fade{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease;}
+.fade.in{opacity:1;transform:none;}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:900;
+  height:60px;display:flex;align-items:center;justify-content:space-between;
+  padding:0 4rem;
+  background:rgba(255,255,255,.97);
+  backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--rule);
+}
+.logo{font-family:'Sora',sans-serif;font-size:.95rem;font-weight:700;color:var(--ink);letter-spacing:-.02em;cursor:pointer;}
+.logo .dot{color:var(--accent2);}
+.nav-links{display:flex;align-items:center;gap:2rem;list-style:none;}
+.nav-links li a,.nav-links li button{
+  font-size:.78rem;font-weight:500;color:var(--muted);
+  background:none;border:none;cursor:pointer;
+  padding:.3rem 0;font-family:'Sora',sans-serif;
+  transition:color .2s;
+}
+.nav-links li a:hover,.nav-links li button:hover{color:var(--accent);}
+.hire-btn{
+  display:inline-flex;align-items:center;gap:.35rem;
+  background:var(--accent);color:#fff !important;
+  font-size:.78rem;font-weight:600;
+  padding:.48rem 1.2rem;border-radius:6px;
+  cursor:pointer;border:none;font-family:'Sora',sans-serif;
+  transition:all .2s;
+}
+.hire-btn:hover{background:var(--accent2);transform:translateY(-1px);}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;background:none;border:none;}
+.burger span{display:block;width:20px;height:1.5px;background:var(--ink);border-radius:2px;}
+.mob-nav{
+  display:none;position:fixed;inset:60px 0 0 0;
+  background:#fff;z-index:899;
+  flex-direction:column;padding:2rem;gap:1rem;
+  border-top:1px solid var(--rule);overflow-y:auto;
+}
+.mob-nav.open{display:flex;}
+.mob-nav button,.mob-nav a{
+  font-size:1rem;font-weight:500;color:var(--ink3);
+  padding:.6rem 0;border-bottom:1px solid var(--rule);
+  text-align:left;background:none;border:none;
+  border-bottom:1px solid var(--rule);
+  font-family:'Sora',sans-serif;cursor:pointer;
+  width:100%;
+}
+.mob-nav a{display:block;}
+.mob-cta{
+  margin-top:.5rem;background:var(--accent) !important;
+  color:#fff !important;padding:.75rem 1.5rem !important;
+  border-radius:6px;text-align:center;font-weight:600;
+  border:none !important;
+}
+
+/* ── HERO ── */
+.hero{
+  min-height:100vh;display:flex;align-items:center;
+  padding:0 4rem;padding-top:60px;
+  position:relative;overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;inset:0;
+  background-image:linear-gradient(var(--rule) 1px,transparent 1px),linear-gradient(90deg,var(--rule) 1px,transparent 1px);
+  background-size:60px 60px;opacity:.3;pointer-events:none;
+}
+.hero::after{
+  content:'';position:absolute;top:-20%;right:-10%;
+  width:700px;height:700px;border-radius:50%;
+  background:radial-gradient(circle,rgba(59,130,246,.06) 0%,transparent 65%);
+  pointer-events:none;
+}
+.hero-inner{
+  max-width:1100px;margin:0 auto;width:100%;
+  display:grid;grid-template-columns:1fr 1fr;
+  align-items:center;gap:5rem;position:relative;z-index:1;
+}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:.55rem;
+  font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--green);background:var(--green-l);border:1px solid #bbf7d0;
+  border-radius:100px;padding:.36rem 1rem;margin-bottom:2rem;
+  animation:up .5s ease both;
+}
+.tag-dot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:pulse 2.2s infinite;}
+.hero-name{
+  font-family:'Lora',serif;
+  font-size:clamp(3rem,5.5vw,5.8rem);
+  font-weight:600;line-height:1.0;letter-spacing:-.035em;
+  color:var(--ink);white-space:nowrap;
+  margin-bottom:1.75rem;
+  animation:up .6s .1s ease both;
+  position:relative;display:inline-block;
+}
+.hero-name::after{
+  content:'';position:absolute;bottom:-6px;left:0;
+  width:100%;height:4px;
+  background:linear-gradient(90deg,var(--accent2),var(--teal));
+  border-radius:2px;animation:reveal .8s .7s ease both;
+}
+.hero-role{font-size:1.05rem;font-weight:400;color:var(--muted);letter-spacing:-.01em;margin-bottom:1.5rem;animation:up .6s .18s ease both;}
+.hero-role em{font-style:italic;color:var(--ink3);font-family:'Lora',serif;}
+.hero-desc{font-size:.98rem;color:var(--ink3);line-height:1.85;max-width:520px;margin-bottom:2.5rem;animation:up .6s .24s ease both;}
+.hero-desc strong{color:var(--ink);font-weight:700;}
+.hero-btns{display:flex;gap:.9rem;flex-wrap:wrap;margin-bottom:3rem;animation:up .6s .3s ease both;}
+.btn-primary{
+  display:inline-flex;align-items:center;gap:.4rem;
+  background:var(--accent);color:#fff;
+  font-size:.88rem;font-weight:600;
+  padding:.82rem 1.9rem;border-radius:8px;
+  border:none;cursor:pointer;font-family:'Sora',sans-serif;
+  transition:all .2s;
+}
+.btn-primary:hover{background:var(--accent2);transform:translateY(-2px);box-shadow:0 8px 24px rgba(59,130,246,.25);}
+.btn-secondary{
+  display:inline-flex;align-items:center;gap:.4rem;
+  background:transparent;color:var(--ink);
+  font-size:.88rem;font-weight:500;
+  padding:.82rem 1.6rem;border-radius:8px;
+  border:1.5px solid var(--rule2);cursor:pointer;
+  font-family:'Sora',sans-serif;transition:all .2s;
+}
+.btn-secondary:hover{border-color:var(--accent2);color:var(--accent);}
+.hero-pills{display:flex;flex-wrap:wrap;gap:.45rem;animation:up .6s .38s ease both;}
+.hpill{font-size:.7rem;font-weight:500;padding:.28rem .78rem;border-radius:100px;border:1px solid var(--rule);color:var(--ink3);background:var(--bg2);}
+.hero-stats{
+  display:grid;grid-template-columns:1fr 1fr;gap:1px;
+  background:var(--rule);border:1px solid var(--rule);
+  border-radius:16px;overflow:hidden;
+  animation:up .7s .4s ease both;
+}
+.hstat{background:var(--bg);padding:2rem 1.75rem;display:flex;flex-direction:column;justify-content:flex-end;transition:background .2s;}
+.hstat:hover{background:var(--bg2);}
+.hstat-lbl{font-size:.67rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin-bottom:.45rem;}
+.hstat-n{font-family:'Lora',serif;font-size:3.2rem;font-weight:600;color:var(--accent2);line-height:1;letter-spacing:-.04em;margin-bottom:.3rem;}
+.hstat-n .acc{color:var(--accent2);font-family:'Lora',serif;}
+.acc-plus{font-size:2rem;font-weight:600;color:var(--accent2);vertical-align:middle;line-height:1;}
+.hstat-sub{font-size:.76rem;color:var(--muted);line-height:1.5;}
+
+/* ── LAYOUT ── */
+.container{max-width:1100px;margin:0 auto;padding:0 4rem;}
+.sec{padding:7rem 0;}
+.sec-alt{background:var(--bg2);}
+.eyebrow{font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent2);margin-bottom:.85rem;display:flex;align-items:center;gap:.65rem;}
+.eyebrow::before{content:'';display:block;width:24px;height:2px;background:var(--accent2);border-radius:1px;}
+.sec-title{font-family:'Lora',serif;font-size:clamp(2.2rem,3.5vw,3.4rem);font-weight:600;color:var(--ink);line-height:1.1;letter-spacing:-.025em;margin-bottom:1rem;}
+.sec-title em{font-style:italic;color:var(--muted);}
+.sec-sub{font-size:.97rem;color:var(--muted);max-width:520px;line-height:1.85;margin-bottom:4rem;}
+
+/* ── PRODUCTS ── */
+.prod-grid{display:flex;flex-direction:column;gap:1.5rem;}
+.pc{
+  background:var(--bg);border:1.5px solid var(--rule);
+  border-radius:16px;padding:2.25rem 2.5rem;
+  display:grid;grid-template-columns:340px 1fr;gap:3rem;align-items:start;
+  transition:border-color .25s,box-shadow .25s,transform .25s;
+  position:relative;overflow:hidden;
+}
+.pc::before{content:'';position:absolute;top:0;left:0;right:0;height:2.5px;opacity:0;transition:opacity .3s;}
+.pc:hover{border-color:var(--rule2);box-shadow:0 12px 40px rgba(0,0,0,.07);transform:translateY(-3px);}
+.pc:hover::before{opacity:1;}
+.pc.ta::before{background:linear-gradient(90deg,var(--accent),var(--accent2));}
+.pc.tt::before{background:linear-gradient(90deg,var(--teal),#0ea5e9);}
+.pc.tg::before{background:linear-gradient(90deg,var(--green),var(--teal));}
+.pc.ts::before{background:linear-gradient(90deg,var(--sky),var(--accent2));}
+.pc.tam::before{background:linear-gradient(90deg,var(--amber),#f59e0b);}
+.pc.tr::before{background:linear-gradient(90deg,var(--rose),var(--amber));}
+.pc.tp::before{background:linear-gradient(90deg,var(--purple),var(--accent));}
+.flagship{background:linear-gradient(150deg,#eff6ff 0%,#f0f9ff 55%,#f5f3ff 100%);}
+.flagship::before{opacity:.7 !important;}
+.pc-left{display:flex;flex-direction:column;}
+.pc-right{display:flex;flex-direction:column;gap:.75rem;padding-top:.2rem;}
+.pc-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1.2rem;}
+.pc-ico{width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.35rem;flex-shrink:0;}
+.ia{background:var(--accent-l);}.it{background:var(--teal-l);}.ig{background:var(--green-l);}
+.is{background:var(--sky-l);}.iam{background:var(--amber-l);}.ir{background:var(--rose-l);}
+.ip{background:var(--purple-l);}.in2{background:var(--bg3);}
+.pbadge{font-size:.61rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.22rem .6rem;border-radius:5px;}
+.bfl{background:#dbeafe;color:var(--accent);}
+.blt{background:var(--green-l);color:var(--green);}
+.band{background:var(--teal-l);color:var(--teal);}
+.bwb{background:var(--sky-l);color:var(--sky);}
+.bsaas{background:var(--purple-l);color:var(--purple);}
+.bb2g{background:var(--amber-l);color:var(--amber);}
+.bhth{background:var(--rose-l);color:var(--rose);}
+.pname{font-family:'Lora',serif;font-size:1.22rem;font-weight:600;color:var(--ink);margin-bottom:.25rem;letter-spacing:-.015em;}
+.purl{font-size:.72rem;font-weight:600;color:var(--accent2);margin-bottom:.65rem;display:flex;align-items:center;gap:.3rem;}
+.pdesc{font-size:.85rem;color:var(--muted);line-height:1.75;flex:1;margin-bottom:1rem;}
+.ptags{display:flex;flex-wrap:wrap;gap:.32rem;margin-bottom:.5rem;}
+.ptag{font-size:.63rem;font-weight:500;padding:.18rem .5rem;border-radius:5px;background:var(--bg3);border:1px solid var(--rule);color:var(--muted);}
+.pstats{display:flex;gap:1.1rem;padding-top:1rem;border-top:1px solid var(--rule);margin-top:.5rem;}
+.ps strong{display:block;font-size:1rem;font-weight:700;color:var(--ink);}
+.ps span{font-size:.63rem;color:var(--faint);}
+.plink{
+  display:inline-flex;align-items:center;gap:.3rem;
+  font-size:.76rem;font-weight:600;color:var(--accent2);
+  margin-top:1rem;transition:gap .2s;
+  background:none;border:none;cursor:pointer;
+  font-family:'Sora',sans-serif;padding:0;
+}
+.plink::after{content:'→';}
+.plink:hover{gap:.55rem;color:var(--accent);}
+.pc-bullets{display:flex;flex-direction:column;gap:.55rem;margin-bottom:.75rem;}
+.pbul{display:flex;gap:.65rem;align-items:flex-start;font-size:.84rem;color:var(--ink3);line-height:1.6;}
+.pbul::before{content:'→';color:var(--accent2);flex-shrink:0;font-size:.72rem;margin-top:.22rem;font-weight:700;}
+
+/* ── REPOS ── */
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);background:var(--rule);gap:1px;border:1px solid var(--rule);border-radius:14px;overflow:hidden;}
+.rc{background:var(--bg);padding:1.5rem;display:block;transition:background .2s;text-decoration:none;color:inherit;}
+.rc:hover{background:var(--bg2);}
+.rc-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:.75rem;}
+.rlang{display:flex;align-items:center;gap:.4rem;font-size:.67rem;color:var(--faint);font-weight:500;}
+.ldot{width:8px;height:8px;border-radius:50%;}
+.l-ts{background:#3178c6;}.l-js{background:#b48900;}.l-html{background:#e34c26;}
+.rcname{font-size:.88rem;font-weight:600;color:var(--ink);margin-bottom:.3rem;}
+.rcdesc{font-size:.77rem;color:var(--muted);line-height:1.58;margin-bottom:.75rem;}
+.rcfoot{display:flex;justify-content:space-between;font-size:.65rem;color:var(--faint);}
+.rccm{background:var(--bg3);padding:.16rem .48rem;border-radius:4px;border:1px solid var(--rule);font-weight:600;color:var(--ink3);}
+
+/* ── ABOUT ── */
+.about-layout{display:grid;grid-template-columns:60fr 40fr;gap:5rem;align-items:start;}
+.about-body p{font-size:.95rem;color:var(--ink3);line-height:1.87;margin-bottom:1.25rem;}
+.about-body p strong{color:var(--ink);font-weight:700;}
+.about-body p em{font-style:italic;color:var(--muted);}
+.teach-box{background:var(--bg2);border:1.5px solid var(--rule);border-radius:16px;padding:1.9rem;}
+.tb-hd{display:flex;align-items:center;gap:.75rem;margin-bottom:1.5rem;}
+.tb-ico{width:40px;height:40px;border-radius:10px;background:var(--accent-l);display:flex;align-items:center;justify-content:center;font-size:1.1rem;}
+.tb-ttl{font-family:'Lora',serif;font-size:1.05rem;font-weight:600;color:var(--ink);letter-spacing:-.01em;}
+.tb-sub{font-size:.74rem;color:var(--muted);margin-top:.1rem;}
+.tb-list{display:flex;flex-direction:column;gap:.85rem;}
+.tb-item{display:flex;gap:.7rem;align-items:flex-start;padding:.85rem .95rem;background:var(--bg);border:1px solid var(--rule);border-radius:10px;}
+.tb-ico2{font-size:.95rem;flex-shrink:0;margin-top:.05rem;}
+.tb-name{font-size:.8rem;font-weight:600;color:var(--ink);margin-bottom:.16rem;}
+.tb-desc{font-size:.73rem;color:var(--muted);line-height:1.6;}
+
+/* ── SKILLS ── */
+.skills-layout{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;}
+.sg{background:var(--bg);border:1.5px solid var(--rule);border-radius:14px;padding:1.75rem;}
+.sglbl{font-size:.66rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-bottom:1.15rem;display:flex;align-items:center;gap:.6rem;}
+.sglbl::after{content:'';flex:1;height:1px;background:var(--rule);}
+.si-list{display:flex;flex-direction:column;gap:.6rem;}
+.si{display:flex;justify-content:space-between;align-items:center;gap:1rem;}
+.si-name{font-size:.83rem;font-weight:500;color:var(--ink3);}
+.si-bar{width:96px;height:3px;background:var(--bg3);border-radius:2px;overflow:hidden;flex-shrink:0;}
+.si-fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:2px;}
+.stack-all{grid-column:span 2;}
+.stack-box{background:var(--bg);border:1.5px solid var(--rule);border-radius:14px;padding:1.75rem;}
+.st-row{margin-bottom:1.1rem;}
+.st-row:last-child{margin-bottom:0;}
+.st-lbl{font-size:.65rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-bottom:.6rem;}
+.st-pills{display:flex;flex-wrap:wrap;gap:.4rem;}
+.sp{font-size:.74rem;font-weight:500;padding:.28rem .75rem;background:var(--bg2);border:1.5px solid var(--rule);border-radius:100px;color:var(--ink3);transition:all .2s;cursor:default;}
+.sp:hover{border-color:var(--accent2);color:var(--accent);background:var(--accent-l);}
+.sp.hl{border-color:var(--accent-m);color:var(--accent);background:var(--accent-l);}
+
+/* ── TIMELINE ── */
+.tl-wrap{display:grid;grid-template-columns:200px 1fr;gap:0;}
+.tl-nav{border-right:1px solid var(--rule);padding-right:2.5rem;}
+.tlbtn{
+  display:flex;align-items:center;gap:.65rem;
+  width:100%;text-align:left;background:none;border:none;cursor:pointer;
+  padding:.6rem 0;font-family:'Sora',sans-serif;font-size:.76rem;
+  font-weight:500;color:var(--faint);transition:color .2s;
+}
+.tlbtn .d{width:8px;height:8px;border-radius:50%;background:var(--rule2);flex-shrink:0;transition:background .2s;}
+.tlbtn:hover{color:var(--ink3);}
+.tlbtn.on{color:var(--ink);font-weight:700;}
+.tlbtn.on .d{background:var(--accent2);}
+.tlbtn.now .d{background:var(--green);animation:pulse 2s infinite;}
+.tl-pane{padding-left:3rem;}
+.tpanel{display:none;}
+.tpanel.on{display:block;animation:up .35s ease both;}
+.tp-per{font-size:.67rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin-bottom:.35rem;}
+.tp-role{font-family:'Lora',serif;font-size:1.7rem;font-weight:600;color:var(--ink);letter-spacing:-.025em;margin-bottom:.15rem;}
+.tp-org{font-size:.87rem;color:var(--accent2);font-weight:600;margin-bottom:.9rem;}
+.tp-body{font-size:.86rem;color:var(--muted);line-height:1.82;max-width:560px;margin-bottom:1rem;}
+.tp-bullets{display:flex;flex-direction:column;gap:.48rem;}
+.tbul{display:flex;gap:.65rem;align-items:flex-start;font-size:.84rem;color:var(--ink3);line-height:1.62;}
+.tbul::before{content:'→';color:var(--accent2);flex-shrink:0;font-size:.74rem;margin-top:.2rem;}
+.tp-chips{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:1rem;}
+.tchip{font-size:.63rem;font-weight:500;padding:.18rem .5rem;border-radius:5px;background:var(--bg2);border:1px solid var(--rule);color:var(--muted);}
+
+/* ── EDU ── */
+.edu-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-top:4.5rem;}
+.ecard{background:var(--bg);border:1.5px solid var(--rule);border-radius:13px;padding:1.65rem;display:flex;gap:1rem;transition:border-color .2s,box-shadow .2s;}
+.ecard:hover{border-color:var(--rule2);box-shadow:0 4px 16px rgba(0,0,0,.05);}
+.eico{width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;}
+.e-deg{font-size:.84rem;font-weight:700;color:var(--ink);margin-bottom:.16rem;}
+.e-inst{font-size:.76rem;color:var(--accent2);font-weight:600;margin-bottom:.14rem;}
+.e-year{font-size:.7rem;color:var(--faint);}
+
+/* ── CTA ── */
+.cta-sec{background:var(--ink);padding:8.5rem 0;text-align:center;position:relative;overflow:hidden;}
+.cta-sec::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:800px;height:400px;background:radial-gradient(ellipse,rgba(59,130,246,.14) 0%,transparent 65%);}
+.cta-inner{position:relative;z-index:1;}
+.cta-h{font-family:'Lora',serif;font-size:clamp(2.5rem,5vw,5.5rem);font-weight:600;color:#fff;line-height:1.0;letter-spacing:-.025em;margin-bottom:1.5rem;}
+.cta-h em{color:#93c5fd;font-style:italic;}
+.cta-sub{font-size:.97rem;color:rgba(255,255,255,.5);max-width:520px;margin:0 auto 2.75rem;line-height:1.88;}
+.roles-wrap{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center;margin-bottom:2.75rem;}
+.role-pill{font-size:.73rem;font-weight:600;padding:.38rem 1rem;border-radius:100px;border:1.5px solid rgba(59,130,246,.35);color:#93c5fd;background:rgba(59,130,246,.1);letter-spacing:.04em;}
+.cta-btns{display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap;}
+.cl-main{display:inline-flex;align-items:center;gap:.4rem;background:var(--accent2);color:#fff;font-size:.9rem;font-weight:600;padding:.9rem 2.1rem;border-radius:8px;transition:all .2s;text-decoration:none;}
+.cl-main:hover{background:var(--accent);transform:translateY(-1px);}
+.cl-out{display:inline-flex;align-items:center;gap:.4rem;background:rgba(255,255,255,.07);color:rgba(255,255,255,.8);font-size:.9rem;font-weight:500;padding:.9rem 1.6rem;border-radius:8px;border:1.5px solid rgba(255,255,255,.12);transition:all .2s;text-decoration:none;}
+.cl-out:hover{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.28);}
+
+/* ── FOOTER ── */
+footer{background:var(--ink2);padding:2.25rem 0;}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.25rem;}
+.f-copy{font-size:.76rem;color:rgba(255,255,255,.3);}
+.f-copy strong{color:rgba(255,255,255,.55);font-weight:700;display:block;margin-bottom:.1rem;}
+.f-links{display:flex;flex-wrap:wrap;gap:1.75rem;}
+.f-links a{font-size:.73rem;color:rgba(255,255,255,.3);transition:color .2s;text-decoration:none;}
+.f-links a:hover{color:#93c5fd;}
+hr.rule{border:none;border-top:1px solid var(--rule);}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1100px){
+  .hero-inner{grid-template-columns:1fr;gap:3rem;padding:4rem 0 2rem;}
+  .hero-stats{grid-template-columns:repeat(3,1fr);grid-template-rows:auto;}
+  .pc{grid-template-columns:260px 1fr;gap:2rem;}
+  .skills-layout{grid-template-columns:1fr;}
+  .stack-all{grid-column:span 1;}
+  .tl-wrap{grid-template-columns:1fr;}
+  .tl-nav{border-right:none;border-bottom:1px solid var(--rule);padding:0 0 1.5rem;display:flex;flex-wrap:wrap;gap:.5rem;}
+  .tl-pane{padding-left:0;padding-top:2rem;}
+  .edu-row{grid-template-columns:1fr 1fr;}
+  .about-layout{grid-template-columns:1fr;gap:2.5rem;}
+  .container{padding:0 2.5rem;}
+}
+@media(max-width:768px){
+  nav{padding:0 1.25rem;}
+  .nav-links,.hire-btn{display:none;}
+  .burger{display:flex;}
+  .container{padding:0 1.25rem;}
+  .hero{padding:0 1.25rem;padding-top:60px;}
+  .hero-inner{gap:2rem;}
+  .hero-name{white-space:normal;}
+  .hero-stats{grid-template-columns:1fr 1fr;}
+  .sec{padding:4rem 0;}
+  .pc{grid-template-columns:1fr;gap:1.5rem;padding:1.75rem;}
+  .rgrid{grid-template-columns:1fr;}
+  .edu-row{grid-template-columns:1fr;}
+  .cta-sec{padding:5rem 0;}
+  footer{padding:1.75rem 0;}
+  .footer-inner{flex-direction:column;align-items:flex-start;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV — all internal links use onclick="navTo('id')" to avoid iframe interception -->
+<nav>
+  <span class="logo" onclick="navTo('hero')">Rahul Chhallare<span class="dot">.</span></span>
+  <ul class="nav-links">
+    <li><button onclick="navTo('work')">Products</button></li>
+    <li><a href="https://github.com/rahulchhallare" target="_blank" rel="noopener noreferrer">GitHub ↗</a></li>
+    <li><button onclick="navTo('about')">About</button></li>
+    <li><button onclick="navTo('skills')">Skills</button></li>
+    <li><button onclick="navTo('experience')">Experience</button></li>
+  </ul>
+  <button class="hire-btn" onclick="navTo('contact')">Let's Connect ↗</button>
+  <button class="burger" id="burger" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mob-nav" id="mobnav">
+  <button onclick="navTo('work');closeNav()">Products</button>
+  <a href="https://github.com/rahulchhallare" target="_blank" rel="noopener noreferrer" onclick="closeNav()">GitHub ↗</a>
+  <button onclick="navTo('about');closeNav()">About</button>
+  <button onclick="navTo('skills');closeNav()">Skills</button>
+  <button onclick="navTo('experience');closeNav()">Experience</button>
+  <button class="mob-cta" onclick="navTo('contact');closeNav()">Let's Connect ↗</button>
+</div>
+
+<!-- HERO -->
+<section id="hero" style="min-height:100vh;display:flex;align-items:center;padding:0 4rem;padding-top:60px;position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;background-image:linear-gradient(var(--rule) 1px,transparent 1px),linear-gradient(90deg,var(--rule) 1px,transparent 1px);background-size:60px 60px;opacity:.3;pointer-events:none;"></div>
+  <div style="position:absolute;top:-20%;right:-10%;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(59,130,246,.06) 0%,transparent 65%);pointer-events:none;"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-tag"><span class="tag-dot"></span>Open to — AI Agent PM · Forward Deployed PM · Product Owner</div>
+      <h1 class="hero-name">Rahul Chhallare</h1>
+      <p class="hero-role">AI Agent PM · Forward Deployed PM · <em>Product Owner</em></p>
+      <p class="hero-desc">I build AI products — not just roadmaps. <strong>9 live products</strong> spanning a Play Store app, an AI learning platform selected by Perplexity AI, a telehealth platform, a no-code agent builder, and a wellness store. Ex-PM at TVS Motor. MBA from Germany.</p>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="navTo('work')">View My Work</button>
+        <a href="https://github.com/rahulchhallare" target="_blank" rel="noopener" class="btn-secondary">GitHub ↗</a>
+        <a href="mailto:rahul@aiagentstudio.ai" class="btn-secondary">Email</a>
+      </div>
+      <div class="hero-pills">
+        <span class="hpill">📍 Pune, India — Open globally</span>
+        <span class="hpill">🔬 Perplexity AI Fellow</span>
+        <span class="hpill">🎓 MBA · TU Nürnberg</span>
+        <span class="hpill">⚙️ B.E. Instrumentation</span>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="hstat"><div class="hstat-lbl">Products shipped</div><div class="hstat-n"><span class="acc">9</span></div><div class="hstat-sub">Live, deployed &amp; running in 2026</div></div>
+      <div class="hstat"><div class="hstat-lbl">Play Store downloads</div><div class="hstat-n"><span class="acc">1K<span class="acc-plus">+</span></span></div><div class="hstat-sub">InstaChat — RAC Innovation Inc.</div></div>
+      <div class="hstat"><div class="hstat-lbl">App store rating</div><div class="hstat-n"><span class="acc">4.2<span style="font-size:2.2rem;vertical-align:middle;">&#9733;</span></span></div><div class="hstat-sub">31 verified Play Store reviews</div></div>
+      <div class="hstat"><div class="hstat-lbl">GitHub commits</div><div class="hstat-n"><span class="acc">82</span></div><div class="hstat-sub">On AIAgentStudio alone</div></div>
+      <div class="hstat"><div class="hstat-lbl">Years in product</div><div class="hstat-n"><span class="acc">5<span class="acc-plus">+</span></span></div><div class="hstat-sub">TVS Motor, EdTech, SaaS, B2G</div></div>
+      <div class="hstat"><div class="hstat-lbl">Repositories</div><div class="hstat-n"><span class="acc">15</span></div><div class="hstat-sub">TypeScript-dominant, production deployed</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="sec sec-alt" id="work">
+  <div class="container">
+    <div class="eyebrow">Products &amp; Ventures</div>
+    <h2 class="sec-title">9 live products.<br><em>Founder-built. Founder-shipped.</em></h2>
+    <p class="sec-sub">Every card links to a live URL or Play Store listing. Full product ownership — concept, PRD, engineering, deployment.</p>
+    <div class="prod-grid">
+
+      <!-- 1. AIAgentStudio -->
+      <div class="pc flagship ta fade">
+        <div class="pc-left">
+          <div class="pc-top"><div class="pc-ico ia">🤖</div><span class="pbadge bfl">Flagship · AI SaaS</span></div>
+          <div class="pname">AIAgentStudio.ai</div>
+          <div class="purl">🌐 aiagentstudio.ai</div>
+          <p class="pdesc">No-code visual AI agent builder — the "Figma for AI agents." Full-stack TypeScript platform with drag-and-drop canvas, AI co-founder chat, agent template marketplace, and India-first integrations (Razorpay, WhatsApp, GST, Tally). Deployed across Replit, Railway &amp; Cursor.</p>
+          <div class="pstats">
+            <div class="ps"><strong>82</strong><span>Commits</span></div>
+            <div class="ps"><strong>3</strong><span>Environments</span></div>
+            <div class="ps"><strong>$49/mo</strong><span>Pricing</span></div>
+            <div class="ps"><strong>Seed</strong><span>Stage</span></div>
+          </div>
+          <a href="https://aiagentstudio.ai" target="_blank" rel="noopener" class="plink">aiagentstudio.ai</a>
+        </div>
+        <div class="pc-right">
+          <div class="pc-bullets">
+            <div class="pbul">Targeting $100K MRR in 90 days — proof for Flourish Ventures seed pitch</div>
+            <div class="pbul">Visual drag-and-drop canvas — agents built without writing a single line of code</div>
+            <div class="pbul">AI co-founder chat scaffolds entire agent logic from plain-English description</div>
+            <div class="pbul">Agent template marketplace with creator revenue-share via Stripe Connect</div>
+            <div class="pbul">India-first integrations: Razorpay, WhatsApp Business API, GST APIs, Tally</div>
+          </div>
+          <div class="ptags"><span class="ptag">TypeScript</span><span class="ptag">React</span><span class="ptag">Drizzle ORM</span><span class="ptag">Vite</span><span class="ptag">Railway</span><span class="ptag">Razorpay</span><span class="ptag">WhatsApp API</span><span class="ptag">Stripe Connect</span></div>
+        </div>
+      </div>
+
+      <!-- 2. AILearnX -->
+      <div class="pc flagship tt fade">
+        <div class="pc-left">
+          <div class="pc-top"><div class="pc-ico ip">🧠</div><span class="pbadge bsaas">Perplexity AI Fellow · Platform</span></div>
+          <div class="pname">AILearnX.com</div>
+          <div class="purl">🌐 ailearnx.com</div>
+          <p class="pdesc">World-class AI learning platform — courses, jobs, competitions, mentorship, events, AI tools &amp; AI agents marketplace. Selected into the Perplexity AI Business Fellowship. Trusted by professionals from Google, Microsoft, Amazon &amp; IBM.</p>
+          <a href="https://ailearnx.com" target="_blank" rel="noopener" class="plink">ailearnx.com</a>
+        </div>
+        <div class="pc-right">
+          <div class="pc-bullets">
+            <div class="pbul">Selected into Perplexity AI Business Fellowship — exclusive global recognition</div>
+            <div class="pbul">Courses, Jobs Board, Competitions &amp; Mentorship under one unified platform</div>
+            <div class="pbul">Built-in AI Agents marketplace and AI Tools directory for practitioners</div>
+            <div class="pbul">Trusted by professionals from Google, Microsoft, Amazon &amp; IBM</div>
+          </div>
+          <div class="ptags"><span class="ptag">AI Education</span><span class="ptag">Jobs Board</span><span class="ptag">Competitions</span><span class="ptag">Mentorship</span><span class="ptag">AI Agents</span><span class="ptag">Perplexity Fellow</span></div>
+        </div>
+      </div>
+
+      <!-- 3. MedPe -->
+      <div class="pc flagship tr fade">
+        <div class="pc-left">
+          <div class="pc-top"><div class="pc-ico ir">🏥</div><span class="pbadge bhth">Live · Telehealth India</span></div>
+          <div class="pname">MedPe.in</div>
+          <div class="purl">🌐 medpe.in</div>
+          <p class="pdesc">Indian telehealth platform — online doctor consultations, prescriptions, and healthcare services. India-first UX with Razorpay payments and privacy-compliant architecture built for India's healthcare regulatory context.</p>
+          <a href="https://medpe.in" target="_blank" rel="noopener" class="plink">medpe.in</a>
+        </div>
+        <div class="pc-right">
+          <div class="pc-bullets">
+            <div class="pbul">Online doctor consultations with instant booking and slot management</div>
+            <div class="pbul">Razorpay-native payments — UPI, cards, netbanking all supported</div>
+            <div class="pbul">Privacy-compliant architecture under India's data protection framework</div>
+            <div class="pbul">Digital prescriptions, health records, and specialist referral flow</div>
+          </div>
+          <div class="ptags"><span class="ptag">Telehealth</span><span class="ptag">India</span><span class="ptag">Razorpay</span><span class="ptag">Healthcare</span><span class="ptag">Digital Prescriptions</span><span class="ptag">UPI</span></div>
+        </div>
+      </div>
+
+      <!-- 4. InstaChat -->
+      <div class="pc tg fade">
+        <div class="pc-left">
+          <div class="pc-top"><div class="pc-ico ig">💬</div><span class="pbadge band">Android · Play Store</span></div>
+          <div class="pname">InstaChat — Secure Messenger</div>
+          <div class="purl">📱 RAC Innovation Inc. · 1K+ · 4.2<span style="color:var(--accent2);">&#9733;</span></div>
+          <p class="pdesc">Secure Android instant messaging app — free voice &amp; video calls, file sharing, offline messages. India's data privacy laws compliant. Proudly Made in India. Published under RAC Innovation Inc.</p>
+          <div class="pstats">
+            <div class="ps"><strong>1K+</strong><span>Downloads</span></div>
+            <div class="ps"><strong>4.2<span style="color:var(--accent2);font-size:.9rem;">&#9733;</span></strong><span>31 reviews</span></div>
+          </div>
+          <a href="https://play.google.com/store/apps/details?id=com.devlomi.instachatt&hl=en_IN" target="_blank" rel="noopener" class="plink">View on Play Store</a>
+        </div>
+        <div class="pc-right">
+          <div class="pc-bullets">
+            <div class="pbul">Free voice &amp; video calls — no per-minute charges, works on any internet connection</div>
+            <div class="pbul">End-to-end secure messaging — no data shared with third parties</div>
+            <div class="pbul">Multimedia sharing — photos, videos, documents and voice messages</div>
+            <div class="pbul">Offline message queue — messages saved until device reconnects</div>
+            <div class="pbul">India's data privacy framework compliant — Made in India, for India</div>
+          </div>
+          <div class="ptags"><span class="ptag">Android</span><span class="ptag">Messaging</span><span class="ptag">Voice/Video</span><span class="ptag">Made in India</span><span class="ptag">RAC Innovation Inc.</span></div>
+        </div>
+      </div>
+
+      <!-- 5. InstaHealthyKart -->
+      <div class="pc tg fade">
+        <div class="pc-left">
+          <div class="pc-top"><div class="pc-ico ig">🥗</div><span class="pbadge blt">Live · E-Commerce</span></div>
+          <div class="pname">InstaHealthyKart.com</div>
+          <div class="purl">🌐 instahealthykart.com</div>
+          <p class="pdesc">India-first health &amp; wellness e-commerce platform — chemical-free, curated products for health-conscious Indian consumers. Full product ownership: catalogue curation, cart, checkout, and fulfilment.</p>
+          <a href="https://instahealthykart.com" target="_blank" rel="noopener" class="plink">instahealthykart.com</a>
+        </div>
+        <div class="pc-right">
+          <div class="pc-bullets">
+            <div class="pbul">Chemical-free product curation — verified wellness brands for Indian consumers</div>
+            <div class="pbul">India-first checkout — Razorpay, UPI, and COD supported</div>
+            <div class="pbul">Full D2C stack: catalogue management, cart, checkout, and order fulfilment</div>
+            <div class="pbul">End-to-end product ownership from domain registration to customer delivery</div>
+          </div>
+          <div class="ptags"><span class="ptag">E-Commerce</span><span class="ptag">Health &amp; Wellness</span><span class="ptag">D2C India</span><span class="ptag">Chemical-free</span><span class="ptag">Razorpay</span></div>
+        </div>
+      </div>
+
+      <!-- 6. HireAIStaff -->
+      <div class="pc ts fade">
+        <div class="pc-left">
+          <div class="pc-top"><div class="pc-ico is">👥</div><span class="pbadge bwb">Live · Vercel</span></div>
+          <div class="pname">HireAIStaff</div>
+          <div class="purl">🌐 hire-ai-staff.vercel.app</div>
+          <p class="pdesc">Hire an AI employee in 60 seconds — Marketing, Legal, Financial, Support, R&amp;D, and Custom AI roles at $199–$499/mo. Built with Next.js 13, deployed on Vercel.</p>
+          <a href="https://hire-ai-staff.vercel.app" target="_blank" rel="noopener" class="plink">hire-ai-staff.vercel.app</a>
+        </div>
+        <div class="pc-right">
+          <div class="pc-bullets">
+            <div class="pbul">6 AI employee types: Marketing, Legal, Financial, Support, R&amp;D, Custom</div>
+            <div class="pbul">Tiered pricing at $199, $299, and $499/mo — clear value tiers</div>
+            <div class="pbul">60-second onboarding from landing to activated AI role</div>
+            <div class="pbul">API-ready architecture — integrates with existing business tools</div>
+          </div>
+          <div class="ptags"><span class="ptag">Next.js 13</span><span class="ptag">JavaScript</span><span class="ptag">Tailwind</span><span class="ptag">Vercel</span><span class="ptag">AI SaaS</span></div>
+        </div>
+      </div>
+
+      <!-- 7. BookMyHelicopter -->
+      <div class="pc tam fade">
+        <div class="pc-left">
+          <div class="pc-top"><div class="pc-ico iam">🚁</div><span class="pbadge bb2g">Live · B2G · Maharashtra</span></div>
+          <div class="pname">BookMyHelicopter.in</div>
+          <div class="purl">🌐 bookmyhelicopter.in</div>
+          <p class="pdesc">India's helicopter booking aggregator — 8+ operator partners across 4 service verticals. Consultative pitch to Kumbh Mela 2027 Authority (Nashik-Trimbakeshwar). Maharashtra Govt. EOI partnership structured.</p>
+          <a href="https://bookmyhelicopter.in" target="_blank" rel="noopener" class="plink">bookmyhelicopter.in</a>
+        </div>
+        <div class="pc-right">
+          <div class="pc-bullets">
+            <div class="pbul">8+ helicopter operator partners across Maharashtra and India</div>
+            <div class="pbul">Kumbh Mela 2027 Authority pitch — Nashik-Trimbakeshwar route coverage</div>
+            <div class="pbul">Maharashtra Government EOI partnership for official helicopter services</div>
+            <div class="pbul">4 service verticals: Pilgrimage, Corporate Charter, Tourism, Emergency</div>
+          </div>
+          <div class="ptags"><span class="ptag">Travel Tech</span><span class="ptag">B2G</span><span class="ptag">Marketplace</span><span class="ptag">Kumbh 2027</span><span class="ptag">Maharashtra Govt.</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GITHUB REPOS -->
+<section class="sec" id="code">
+  <div class="container">
+    <div class="eyebrow">github.com/rahulchhallare · 15 repositories</div>
+    <h2 class="sec-title">Real code.<br><em>Production deployed.</em></h2>
+    <p class="sec-sub">A PM who reads, reviews, and ships code. Multi-environment workflow across Replit, Railway, Cursor, and Vercel.</p>
+    <div class="rgrid">
+      <a class="rc fade" href="https://github.com/rahulchhallare/AIAgentStudio_Replit" target="_blank" rel="noopener">
+        <div class="rc-top"><span style="font-size:1.1rem">🤖</span><div class="rlang"><span class="ldot l-ts"></span>TypeScript</div></div>
+        <div class="rcname">AIAgentStudio_Replit</div>
+        <div class="rcdesc">Full-stack AI agent builder. client/server/shared monorepo. Deployed Replit + Railway.</div>
+        <div class="rcfoot"><span class="rccm">82 commits</span><span>Production</span></div>
+      </a>
+      <a class="rc fade" href="https://github.com/rahulchhallare/aiagentstudio-v1" target="_blank" rel="noopener">
+        <div class="rc-top"><span style="font-size:1.1rem">⚡</span><div class="rlang"><span class="ldot l-ts"></span>TypeScript</div></div>
+        <div class="rcname">aiagentstudio-v1</div>
+        <div class="rcdesc">Production V1 — visual canvas, Shopify-inspired UX, India-first integrations. Cursor IDE.</div>
+        <div class="rcfoot"><span class="rccm">Active</span><span>shadcn/ui</span></div>
+      </a>
+      <a class="rc fade" href="https://github.com/rahulchhallare/AIAgentStudio_Cursor" target="_blank" rel="noopener">
+        <div class="rc-top"><span style="font-size:1.1rem">🖱️</span><div class="rlang"><span class="ldot l-ts"></span>TypeScript</div></div>
+        <div class="rcname">AIAgentStudio_Cursor</div>
+        <div class="rcdesc">Cursor IDE parallel build — multi-environment AI-assisted development workflow.</div>
+        <div class="rcfoot"><span class="rccm">TypeScript</span><span>AI-assisted</span></div>
+      </a>
+      <a class="rc fade" href="https://github.com/rahulchhallare/aiagentstudio-v1-test" target="_blank" rel="noopener">
+        <div class="rc-top"><span style="font-size:1.1rem">🧪</span><div class="rlang"><span class="ldot l-ts"></span>TypeScript</div></div>
+        <div class="rcname">aiagentstudio-v1-test</div>
+        <div class="rcdesc">QA isolation environment for V1. Separate test branch — mature dev process hygiene.</div>
+        <div class="rcfoot"><span class="rccm">Test env</span><span>QA</span></div>
+      </a>
+      <a class="rc fade" href="https://github.com/rahulchhallare/HireAIStaff" target="_blank" rel="noopener">
+        <div class="rc-top"><span style="font-size:1.1rem">🧠</span><div class="rlang"><span class="ldot l-js"></span>JavaScript</div></div>
+        <div class="rcname">HireAIStaff</div>
+        <div class="rcdesc">Live Next.js 13 AI staffing platform. hire-ai-staff.vercel.app. $199–$499/mo.</div>
+        <div class="rcfoot"><span class="rccm">9 commits</span><span>Live · Vercel</span></div>
+      </a>
+      <a class="rc fade" href="https://github.com/rahulchhallare/Tool" target="_blank" rel="noopener">
+        <div class="rc-top"><span style="font-size:1.1rem">🛠️</span><div class="rlang"><span class="ldot l-html"></span>HTML</div></div>
+        <div class="rcname">Tool</div>
+        <div class="rcdesc">Client-side image compression — pure HTML/JS, no dependencies, no upload required.</div>
+        <div class="rcfoot"><span class="rccm">HTML</span><span>Client-side</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ABOUT -->
+<section class="sec" id="about">
+  <div class="container">
+    <div class="eyebrow">About &amp; Teaching</div>
+    <h2 class="sec-title">Builder who teaches.<br><em>Founder who ships.</em></h2>
+    <div class="about-layout">
+      <div class="about-body">
+        <p>I'm a <strong>full-time founder and AI product manager</strong> based in Pune, India. After five years in enterprise product roles — including leading digital product initiatives at <strong>TVS Motor Company</strong> — I left to build products at the frontier of AI.</p>
+        <p>I founded <strong>AIAgentStudio.ai</strong>, a no-code visual AI agent builder, built in TypeScript from a blank repo to production — visual canvas, AI co-founder chat, agent marketplace, and India-first integrations. I've shipped <strong>9 live products</strong> across AI SaaS, telehealth, health e-commerce, travel, and messaging.</p>
+        <p>I'm a <strong>Perplexity AI Business Fellow</strong>, and my AI learning platform <strong>AILearnX.com</strong> was selected as part of that fellowship. I also built <strong>MedPe.in</strong>, an India-first telehealth platform bringing doctor consultations online with Razorpay-native payments.</p>
+        <p>I hold an <strong>MBA from TU Nürnberg, Germany</strong> and a B.E. in Instrumentation Engineering from the University of Pune. I've consulted internationally at ITQ GmbH in Germany and Las Palmas, Spain.</p>
+      </div>
+      <div>
+        <div class="teach-box fade">
+          <div class="tb-hd">
+            <div class="tb-ico">🎓</div>
+            <div>
+              <div class="tb-ttl">Teaching &amp; Mentorship</div>
+              <div class="tb-sub">Eduinx · CAIPM Program</div>
+            </div>
+          </div>
+          <div class="tb-list">
+            <div class="tb-item"><div class="tb-ico2">📋</div><div><div class="tb-name">CAIPM Certification</div><div class="tb-desc">India's first Certified AI Product Manager program. 15+ professionals certified in LLM product design, agent architectures, and AI go-to-market.</div></div></div>
+            <div class="tb-item"><div class="tb-ico2">🧑‍💻</div><div><div class="tb-name">Live Case Studies</div><div class="tb-desc">Students learn by dissecting AIAgentStudio's real PRD, roadmap, and architecture — not hypotheticals. Teaching from the trenches.</div></div></div>
+            <div class="tb-item"><div class="tb-ico2">🌱</div><div><div class="tb-name">Community &amp; Mentorship</div><div class="tb-desc">Active mentor for AI PMs entering the field. Eduinx also serves as a zero-CAC acquisition channel for the AIAgentStudio ecosystem.</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- SKILLS -->
+<section class="sec sec-alt" id="skills">
+  <div class="container">
+    <div class="eyebrow">Skills &amp; Stack</div>
+    <h2 class="sec-title">Strategy. Fluency. <em>Execution.</em></h2>
+    <p class="sec-sub">The combination that AI Agent PM, Forward Deployed PM, and Product Owner roles all demand — product strategy depth, AI technical fluency, and hands-on execution.</p>
+    <div class="skills-layout">
+      <div class="sg fade">
+        <div class="sglbl">Product &amp; AI</div>
+        <div class="si-list">
+          <div class="si"><span class="si-name">AI Product Strategy</span><div class="si-bar"><div class="si-fill" style="width:95%"></div></div></div>
+          <div class="si"><span class="si-name">LLM &amp; Agent Architecture</span><div class="si-bar"><div class="si-fill" style="width:90%"></div></div></div>
+          <div class="si"><span class="si-name">Forward Deployment</span><div class="si-bar"><div class="si-fill" style="width:88%"></div></div></div>
+          <div class="si"><span class="si-name">PRD &amp; Roadmapping</span><div class="si-bar"><div class="si-fill" style="width:93%"></div></div></div>
+          <div class="si"><span class="si-name">RAG Pipelines &amp; Prompt Engineering</span><div class="si-bar"><div class="si-fill" style="width:85%"></div></div></div>
+          <div class="si"><span class="si-name">Competitive Analysis</span><div class="si-bar"><div class="si-fill" style="width:90%"></div></div></div>
+        </div>
+      </div>
+      <div class="sg fade">
+        <div class="sglbl">Engineering &amp; GTM</div>
+        <div class="si-list">
+          <div class="si"><span class="si-name">TypeScript / React / Next.js</span><div class="si-bar"><div class="si-fill" style="width:80%"></div></div></div>
+          <div class="si"><span class="si-name">Mobile (Android, Play Store)</span><div class="si-bar"><div class="si-fill" style="width:72%"></div></div></div>
+          <div class="si"><span class="si-name">SaaS Revenue Modeling</span><div class="si-bar"><div class="si-fill" style="width:88%"></div></div></div>
+          <div class="si"><span class="si-name">India Market (Razorpay, GST, WhatsApp)</span><div class="si-bar"><div class="si-fill" style="width:93%"></div></div></div>
+          <div class="si"><span class="si-name">B2G &amp; Enterprise Sales</span><div class="si-bar"><div class="si-fill" style="width:78%"></div></div></div>
+          <div class="si"><span class="si-name">Telehealth &amp; Health Tech</span><div class="si-bar"><div class="si-fill" style="width:74%"></div></div></div>
+        </div>
+      </div>
+      <div class="stack-all">
+        <div class="stack-box fade">
+          <div class="st-row"><div class="st-lbl">Frontend &amp; Backend</div><div class="st-pills"><span class="sp hl">TypeScript</span><span class="sp hl">React</span><span class="sp hl">Next.js</span><span class="sp">Node.js</span><span class="sp">Vite</span><span class="sp">Tailwind</span><span class="sp">shadcn/ui</span><span class="sp">Drizzle ORM</span><span class="sp">Supabase</span></div></div>
+          <div class="st-row"><div class="st-lbl">AI &amp; APIs</div><div class="st-pills"><span class="sp hl">OpenAI API</span><span class="sp hl">Anthropic API</span><span class="sp">Perplexity</span><span class="sp">MCP</span><span class="sp">RAG</span><span class="sp">Inngest</span></div></div>
+          <div class="st-row"><div class="st-lbl">Payments &amp; Integrations</div><div class="st-pills"><span class="sp hl">Razorpay</span><span class="sp">Stripe Connect</span><span class="sp">WhatsApp Business API</span><span class="sp">GST APIs</span><span class="sp">Google Sheets API</span></div></div>
+          <div class="st-row"><div class="st-lbl">DevOps &amp; Tools</div><div class="st-pills"><span class="sp">Railway</span><span class="sp">Replit</span><span class="sp">Vercel</span><span class="sp">Cursor</span><span class="sp">GitHub</span><span class="sp">ClickUp</span><span class="sp">Android / Play Store</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="sec" id="experience">
+  <div class="container">
+    <div class="eyebrow">Experience</div>
+    <h2 class="sec-title">Enterprise PM turned<br><em>serial AI founder.</em></h2>
+    <p class="sec-sub">Five years at scale across manufacturing, EdTech, and international consulting — then left to build 9 products I wished existed.</p>
+    <div class="tl-wrap">
+      <div class="tl-nav">
+        <button class="tlbtn now on" onclick="showPanel(this,'p0')"><span class="d"></span>AIAgentStudio · AILearnX</button>
+        <button class="tlbtn now"    onclick="showPanel(this,'p1')"><span class="d"></span>MedPe · Other Ventures</button>
+        <button class="tlbtn"        onclick="showPanel(this,'p2')"><span class="d"></span>Perplexity AI Fellow</button>
+        <button class="tlbtn"        onclick="showPanel(this,'p3')"><span class="d"></span>TVS Motor Company</button>
+        <button class="tlbtn"        onclick="showPanel(this,'p4')"><span class="d"></span>Practically EdTech</button>
+        <button class="tlbtn"        onclick="showPanel(this,'p5')"><span class="d"></span>ITQ GmbH · Germany</button>
+      </div>
+      <div class="tl-pane">
+        <div class="tpanel on" id="p0">
+          <div class="tp-per">Apr 2025 – Present</div>
+          <div class="tp-role">Founder &amp; CEO</div>
+          <div class="tp-org">AIAgentStudio.ai · AILearnX.com · Pune</div>
+          <p class="tp-body">Building the no-code visual AI agent builder and AI learning platform. Full-stack TypeScript with 82+ commits. AILearnX selected by Perplexity AI Business Fellowship. Preparing Flourish Ventures seed pitch.</p>
+          <div class="tp-bullets">
+            <div class="tbul">Shipped visual drag-and-drop canvas, AI co-founder interface, and agent marketplace</div>
+            <div class="tbul">AILearnX selected into Perplexity AI Fellowship — trusted by Google, Microsoft, Amazon, IBM</div>
+            <div class="tbul">Targeting $100K MRR at $49/mo + Stripe Connect revenue share</div>
+          </div>
+          <div class="tp-chips"><span class="tchip">TypeScript</span><span class="tchip">React</span><span class="tchip">AI Agents</span><span class="tchip">Seed Stage</span></div>
+        </div>
+        <div class="tpanel" id="p1">
+          <div class="tp-per">Active · Founder</div>
+          <div class="tp-role">Founder</div>
+          <div class="tp-org">MedPe.in · InstaChat · InstaHealthyKart · HireAIStaff · BookMyHelicopter</div>
+          <p class="tp-body">Running five live products simultaneously — each built end-to-end solo with no external engineering team.</p>
+          <div class="tp-bullets">
+            <div class="tbul">MedPe.in — India-first telehealth, online doctor consultations, Razorpay payments</div>
+            <div class="tbul">InstaChat — Android secure messenger, 1K+ downloads, 4.2★, RAC Innovation Inc.</div>
+            <div class="tbul">InstaHealthyKart.com — India D2C wellness e-commerce, chemical-free curation</div>
+            <div class="tbul">HireAIStaff — Next.js 13, live Vercel, $199–$499/mo AI staffing</div>
+            <div class="tbul">BookMyHelicopter.in — 8+ operators, Kumbh Mela 2027 B2G pitch, Maharashtra Govt. EOI</div>
+          </div>
+          <div class="tp-chips"><span class="tchip">Telehealth</span><span class="tchip">Android</span><span class="tchip">E-Commerce</span><span class="tchip">B2G</span></div>
+        </div>
+        <div class="tpanel" id="p2">
+          <div class="tp-per">Mar – Sep 2025</div>
+          <div class="tp-role">Business Fellow</div>
+          <div class="tp-org">Perplexity AI Fellowship</div>
+          <p class="tp-body">Competitively selected for Perplexity AI's Business Fellowship. AILearnX.com was selected as part of this fellowship.</p>
+          <div class="tp-bullets">
+            <div class="tbul">Deep exposure to LLM search products and agentic retrieval architectures</div>
+            <div class="tbul">AILearnX amplified through Perplexity's ecosystem and partner network</div>
+          </div>
+          <div class="tp-chips"><span class="tchip">LLM Search</span><span class="tchip">AI Strategy</span><span class="tchip">Fellowship</span></div>
+        </div>
+        <div class="tpanel" id="p3">
+          <div class="tp-per">2023 – Mar 2025</div>
+          <div class="tp-role">Product Manager</div>
+          <div class="tp-org">TVS Motor Company · Pune</div>
+          <p class="tp-body">Led digital product initiatives at one of India's largest two-wheeler OEMs. Infor ERP automation, instrumentation product lines, cross-functional roadmap delivery.</p>
+          <div class="tp-bullets">
+            <div class="tbul">Led Infor ERP automation across manufacturing and instrumentation lines</div>
+            <div class="tbul">Delivered measurable revenue and lead uplift through AI chatbot and voice interface</div>
+            <div class="tbul">Cross-functional alignment across engineering, design, and business</div>
+          </div>
+          <div class="tp-chips"><span class="tchip">ERP Automation</span><span class="tchip">Enterprise PM</span><span class="tchip">Manufacturing</span></div>
+        </div>
+        <div class="tpanel" id="p4">
+          <div class="tp-per">Dec 2021 – Dec 2022</div>
+          <div class="tp-role">Product Manager</div>
+          <div class="tp-org">Practically EdTech</div>
+          <p class="tp-body">Product role at immersive K-12 learning platform. Interactive content pipelines, learner analytics, and feature delivery.</p>
+          <div class="tp-bullets">
+            <div class="tbul">Built and shipped interactive content features for K-12 learners</div>
+            <div class="tbul">Learner analytics and retention mechanics for consumer growth</div>
+          </div>
+          <div class="tp-chips"><span class="tchip">EdTech</span><span class="tchip">Consumer Product</span><span class="tchip">Analytics</span></div>
+        </div>
+        <div class="tpanel" id="p5">
+          <div class="tp-per">Earlier · International</div>
+          <div class="tp-role">Product &amp; Tech Consulting</div>
+          <div class="tp-org">ITQ GmbH · Germany &amp; Las Palmas · CentPro Engineering</div>
+          <p class="tp-body">Technical and product consulting in Germany and Spain. Enterprise software environments. Foundation for global PM perspective.</p>
+          <div class="tp-bullets">
+            <div class="tbul">Enterprise software consulting at ITQ GmbH, Germany and Las Palmas</div>
+            <div class="tbul">Cross-cultural PM foundations across European enterprise contexts</div>
+          </div>
+          <div class="tp-chips"><span class="tchip">Germany</span><span class="tchip">Enterprise Software</span><span class="tchip">International</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="edu-row">
+      <div class="ecard fade"><div class="eico is">🇩🇪</div><div><div class="e-deg">MBA — Business Administration</div><div class="e-inst">Technical University Nürnberg, Germany</div><div class="e-year">International MBA · Technology Management · Entrepreneurship</div></div></div>
+      <div class="ecard fade"><div class="eico in2">⚙️</div><div><div class="e-deg">B.E. — Instrumentation Engineering</div><div class="e-inst">University of Pune</div><div class="e-year">Systems design · Automation · Engineering foundations</div></div></div>
+      <div class="ecard fade"><div class="eico it">🔬</div><div><div class="e-deg">Perplexity AI Business Fellowship</div><div class="e-inst">Perplexity AI · 2025</div><div class="e-year">AI product strategy · LLM systems · Enterprise deployment</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA / CONTACT -->
+<section class="cta-sec" id="contact">
+  <div class="container">
+    <div class="cta-inner">
+      <h2 class="cta-h">Ready to build<br><em>something remarkable?</em></h2>
+      <p class="cta-sub">9 live products. 1K+ app downloads. Seed-stage AI SaaS. Perplexity AI Fellow. The rarest combination — founder execution + enterprise PM rigour + deep AI technical fluency. Open globally from Pune, India.</p>
+      <div class="roles-wrap">
+        <span class="role-pill">AI Agent PM</span>
+        <span class="role-pill">Forward Deployed PM</span>
+        <span class="role-pill">Product Owner · AI Systems</span>
+        <span class="role-pill">Head of Product · AI Startup</span>
+        <span class="role-pill">Solutions PM</span>
+        <span class="role-pill">AI Product Advisory</span>
+      </div>
+      <div class="cta-btns">
+        <a href="mailto:rahul@aiagentstudio.ai" class="cl-main">Email Me →</a>
+        <a href="https://github.com/rahulchhallare" target="_blank" rel="noopener" class="cl-out">GitHub</a>
+        <a href="https://www.linkedin.com/in/rahulchhallare" target="_blank" rel="noopener" class="cl-out">LinkedIn</a>
+        <a href="https://aiagentstudio.ai" target="_blank" rel="noopener" class="cl-out">AIAgentStudio</a>
+        <a href="https://ailearnx.com" target="_blank" rel="noopener" class="cl-out">AILearnX</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="f-copy"><strong>Rahul Arun Chhallare</strong>AI Product Manager · Multi-Venture Founder · Pune &amp; Nagpur, India · 2026</div>
+      <div class="f-links">
+        <a href="https://aiagentstudio.ai" target="_blank" rel="noopener">AIAgentStudio</a>
+        <a href="https://ailearnx.com" target="_blank" rel="noopener">AILearnX</a>
+        <a href="https://medpe.in" target="_blank" rel="noopener">MedPe</a>
+        <a href="https://instahealthykart.com" target="_blank" rel="noopener">InstaHealthyKart</a>
+        <a href="https://play.google.com/store/apps/details?id=com.devlomi.instachatt" target="_blank" rel="noopener">InstaChat</a>
+        <a href="https://hire-ai-staff.vercel.app" target="_blank" rel="noopener">HireAIStaff</a>
+        <a href="https://bookmyhelicopter.in" target="_blank" rel="noopener">BookMyHelicopter</a>
+        <a href="https://github.com/rahulchhallare" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ── Core scroll function — works inside any iframe ── */
+function navTo(id) {
+  var el = document.getElementById(id);
+  if (!el) return;
+  var top = el.getBoundingClientRect().top + window.pageYOffset - 68;
+  window.scrollTo({ top: top, behavior: 'smooth' });
+}
+
+/* ── Mobile nav ── */
+function toggleNav() {
+  document.getElementById('mobnav').classList.toggle('open');
+}
+function closeNav() {
+  document.getElementById('mobnav').classList.remove('open');
+}
+
+/* ── Timeline tabs ── */
+function showPanel(btn, id) {
+  var btns = document.querySelectorAll('.tlbtn');
+  for (var i = 0; i < btns.length; i++) btns[i].classList.remove('on');
+  var panels = document.querySelectorAll('.tpanel');
+  for (var j = 0; j < panels.length; j++) panels[j].classList.remove('on');
+  btn.classList.add('on');
+  document.getElementById(id).classList.add('on');
+}
+
+/* ── Scroll reveal ── */
+if ('IntersectionObserver' in window) {
+  var observer = new IntersectionObserver(function(entries) {
+    for (var i = 0; i < entries.length; i++) {
+      if (entries[i].isIntersecting) {
+        entries[i].target.classList.add('in');
+        observer.unobserve(entries[i].target);
+      }
+    }
+  }, { threshold: 0.08 });
+  var fadeEls = document.querySelectorAll('.fade');
+  for (var k = 0; k < fadeEls.length; k++) observer.observe(fadeEls[k]);
+}
+</script>
+<!--
+HOW TO PUBLISH THIS PORTFOLIO (FREE SHAREABLE URL)
+===================================================
+OPTION 1 — GitHub Pages → https://rahulchhallare.github.io
+  1. Create repo named: rahulchhallare.github.io on github.com/rahulchhallare
+  2. Upload this file as: index.html
+  3. Settings → Pages → Source: main branch → Save
+  4. Live in ~2 min. Share on LinkedIn, WhatsApp, email.
+
+OPTION 2 — Netlify → netlify.com → "Deploy manually" → drag this file
+  Instant URL like: https://rahul-portfolio.netlify.app
+
+OPTION 3 — Vercel → vercel.com → New Project → drag this file
+  Instant URL like: https://rahul-chhallare.vercel.app
+===================================================
+-->
+</body>
+</html>
