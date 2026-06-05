@@ -1,937 +1,617 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rahul Chhallare — AI Agent PM · Forward Deployed PM · Product Owner</title>
-<meta name="description" content="Rahul Chhallare — AI Product Manager, Forward Deployed AI Agent PM & Product Owner. Founder of 9 live products including AIAgentStudio.ai, AILearnX.com, MedPe.in. Perplexity AI Fellow. Ex-TVS Motor. MBA Germany.">
-<meta name="keywords" content="AI Product Manager, Forward Deployed PM, AI Agent PM, Product Owner, AIAgentStudio, Rahul Chhallare, Pune India, LLM Product, Perplexity AI Fellow">
-<meta name="author" content="Rahul Arun Chhallare">
-<!-- Open Graph — controls how link looks on LinkedIn, WhatsApp, Twitter -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Rahul Chhallare — AI Agent PM · Forward Deployed PM · Product Owner">
-<meta property="og:description" content="Founder of 9 live AI products. Perplexity AI Fellow. Built AIAgentStudio.ai, AILearnX.com, MedPe.in &amp; more. Open to AI PM · Forward Deployed PM · Product Owner roles globally.">
-<meta property="og:url" content="https://rahulchhallare.github.io">
-<meta property="og:site_name" content="Rahul Chhallare Portfolio">
-<meta property="og:image" content="https://avatars.githubusercontent.com/u/176390768?v=4">
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Rahul Chhallare — AI Agent PM · Forward Deployed PM">
-<meta name="twitter:description" content="Founder of 9 live AI products. Perplexity AI Fellow. Built AIAgentStudio, AILearnX, MedPe &amp; more.">
-<meta name="twitter:image" content="https://avatars.githubusercontent.com/u/176390768?v=4">
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Rahul Chhallare — AI Agent PM · Forward Deployed PM</title>
+<meta name="description" content="9 live AI products. Perplexity AI Fellow. MBA Germany. Open to AI PM roles globally."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 <style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --ink:#0c0f14;--ink2:#1a2030;--ink3:#2d3748;--muted:#64748b;--faint:#94a3b8;
-  --rule:#e2e8f0;--rule2:#cbd5e1;--bg:#ffffff;--bg2:#f8fafc;--bg3:#f1f5f9;
-  --accent:#1e40af;--accent2:#3b82f6;--accent-l:#eff6ff;--accent-m:#bfdbfe;
-  --teal:#0f766e;--teal-l:#f0fdfa;--green:#15803d;--green-l:#f0fdf4;
-  --amber:#92400e;--amber-l:#fffbeb;--rose:#9f1239;--rose-l:#fff1f2;
-  --purple:#5b21b6;--purple-l:#f5f3ff;--sky:#0369a1;--sky-l:#f0f9ff;
+  --white:#ffffff;--gray-50:#f9fafb;--gray-100:#f3f4f6;--gray-200:#e5e7eb;
+  --gray-300:#d1d5db;--gray-400:#9ca3af;--gray-500:#6b7280;--gray-700:#374151;
+  --gray-800:#1f2937;--gray-900:#111827;
+  --blue-50:#eff6ff;--blue-100:#dbeafe;--blue-600:#2563eb;--blue-700:#1d4ed8;
 }
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:auto;}
-body{font-family:'Sora',sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
-a{text-decoration:none;color:inherit;}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,sans-serif;background:var(--white);color:var(--gray-900);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit;cursor:pointer}
 
-@keyframes up{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
-@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.3;}}
-@keyframes reveal{from{clip-path:inset(0 100% 0 0);}to{clip-path:inset(0 0% 0 0);}}
-.fade{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease;}
-.fade.in{opacity:1;transform:none;}
+/* NAV */
+.nav-wrap{position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--gray-200)}
+nav{max-width:1120px;margin:0 auto;padding:0 1.5rem;height:60px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-size:.9375rem;font-weight:600;color:var(--gray-900);cursor:pointer}
+.nav-links{display:flex;align-items:center;gap:.125rem;list-style:none}
+.nav-links li a{font-size:.875rem;font-weight:500;color:var(--gray-500);padding:.5rem .875rem;border-radius:6px;transition:background .15s,color .15s}
+.nav-links li a:hover,.nav-links li a.active{background:var(--gray-100);color:var(--gray-900)}
 
-/* ── NAV ── */
-nav{
-  position:fixed;top:0;left:0;right:0;z-index:900;
-  height:60px;display:flex;align-items:center;justify-content:space-between;
-  padding:0 4rem;
-  background:rgba(255,255,255,.97);
-  backdrop-filter:blur(20px);
-  border-bottom:1px solid var(--rule);
-}
-.logo{font-family:'Sora',sans-serif;font-size:.95rem;font-weight:700;color:var(--ink);letter-spacing:-.02em;cursor:pointer;}
-.logo .dot{color:var(--accent2);}
-.nav-links{display:flex;align-items:center;gap:2rem;list-style:none;}
-.nav-links li a,.nav-links li button{
-  font-size:.78rem;font-weight:500;color:var(--muted);
-  background:none;border:none;cursor:pointer;
-  padding:.3rem 0;font-family:'Sora',sans-serif;
-  transition:color .2s;
-}
-.nav-links li a:hover,.nav-links li button:hover{color:var(--accent);}
-.hire-btn{
-  display:inline-flex;align-items:center;gap:.35rem;
-  background:var(--accent);color:#fff !important;
-  font-size:.78rem;font-weight:600;
-  padding:.48rem 1.2rem;border-radius:6px;
-  cursor:pointer;border:none;font-family:'Sora',sans-serif;
-  transition:all .2s;
-}
-.hire-btn:hover{background:var(--accent2);transform:translateY(-1px);}
-.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;background:none;border:none;}
-.burger span{display:block;width:20px;height:1.5px;background:var(--ink);border-radius:2px;}
-.mob-nav{
-  display:none;position:fixed;inset:60px 0 0 0;
-  background:#fff;z-index:899;
-  flex-direction:column;padding:2rem;gap:1rem;
-  border-top:1px solid var(--rule);overflow-y:auto;
-}
-.mob-nav.open{display:flex;}
-.mob-nav button,.mob-nav a{
-  font-size:1rem;font-weight:500;color:var(--ink3);
-  padding:.6rem 0;border-bottom:1px solid var(--rule);
-  text-align:left;background:none;border:none;
-  border-bottom:1px solid var(--rule);
-  font-family:'Sora',sans-serif;cursor:pointer;
-  width:100%;
-}
-.mob-nav a{display:block;}
-.mob-cta{
-  margin-top:.5rem;background:var(--accent) !important;
-  color:#fff !important;padding:.75rem 1.5rem !important;
-  border-radius:6px;text-align:center;font-weight:600;
-  border:none !important;
-}
+/* PAGES */
+.page{display:none}.page.active{display:block}
 
-/* ── HERO ── */
-.hero{
-  min-height:100vh;display:flex;align-items:center;
-  padding:0 4rem;padding-top:60px;
-  position:relative;overflow:hidden;
-}
-.hero::before{
-  content:'';position:absolute;inset:0;
-  background-image:linear-gradient(var(--rule) 1px,transparent 1px),linear-gradient(90deg,var(--rule) 1px,transparent 1px);
-  background-size:60px 60px;opacity:.3;pointer-events:none;
-}
-.hero::after{
-  content:'';position:absolute;top:-20%;right:-10%;
-  width:700px;height:700px;border-radius:50%;
-  background:radial-gradient(circle,rgba(59,130,246,.06) 0%,transparent 65%);
-  pointer-events:none;
-}
-.hero-inner{
-  max-width:1100px;margin:0 auto;width:100%;
-  display:grid;grid-template-columns:1fr 1fr;
-  align-items:center;gap:5rem;position:relative;z-index:1;
-}
-.hero-tag{
-  display:inline-flex;align-items:center;gap:.55rem;
-  font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
-  color:var(--green);background:var(--green-l);border:1px solid #bbf7d0;
-  border-radius:100px;padding:.36rem 1rem;margin-bottom:2rem;
-  animation:up .5s ease both;
-}
-.tag-dot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:pulse 2.2s infinite;}
-.hero-name{
-  font-family:'Lora',serif;
-  font-size:clamp(3rem,5.5vw,5.8rem);
-  font-weight:600;line-height:1.0;letter-spacing:-.035em;
-  color:var(--ink);white-space:nowrap;
-  margin-bottom:1.75rem;
-  animation:up .6s .1s ease both;
-  position:relative;display:inline-block;
-}
-.hero-name::after{
-  content:'';position:absolute;bottom:-6px;left:0;
-  width:100%;height:4px;
-  background:linear-gradient(90deg,var(--accent2),var(--teal));
-  border-radius:2px;animation:reveal .8s .7s ease both;
-}
-.hero-role{font-size:1.05rem;font-weight:400;color:var(--muted);letter-spacing:-.01em;margin-bottom:1.5rem;animation:up .6s .18s ease both;}
-.hero-role em{font-style:italic;color:var(--ink3);font-family:'Lora',serif;}
-.hero-desc{font-size:.98rem;color:var(--ink3);line-height:1.85;max-width:520px;margin-bottom:2.5rem;animation:up .6s .24s ease both;}
-.hero-desc strong{color:var(--ink);font-weight:700;}
-.hero-btns{display:flex;gap:.9rem;flex-wrap:wrap;margin-bottom:3rem;animation:up .6s .3s ease both;}
-.btn-primary{
-  display:inline-flex;align-items:center;gap:.4rem;
-  background:var(--accent);color:#fff;
-  font-size:.88rem;font-weight:600;
-  padding:.82rem 1.9rem;border-radius:8px;
-  border:none;cursor:pointer;font-family:'Sora',sans-serif;
-  transition:all .2s;
-}
-.btn-primary:hover{background:var(--accent2);transform:translateY(-2px);box-shadow:0 8px 24px rgba(59,130,246,.25);}
-.btn-secondary{
-  display:inline-flex;align-items:center;gap:.4rem;
-  background:transparent;color:var(--ink);
-  font-size:.88rem;font-weight:500;
-  padding:.82rem 1.6rem;border-radius:8px;
-  border:1.5px solid var(--rule2);cursor:pointer;
-  font-family:'Sora',sans-serif;transition:all .2s;
-}
-.btn-secondary:hover{border-color:var(--accent2);color:var(--accent);}
-.hero-pills{display:flex;flex-wrap:wrap;gap:.45rem;animation:up .6s .38s ease both;}
-.hpill{font-size:.7rem;font-weight:500;padding:.28rem .78rem;border-radius:100px;border:1px solid var(--rule);color:var(--ink3);background:var(--bg2);}
-.hero-stats{
-  display:grid;grid-template-columns:1fr 1fr;gap:1px;
-  background:var(--rule);border:1px solid var(--rule);
-  border-radius:16px;overflow:hidden;
-  animation:up .7s .4s ease both;
-}
-.hstat{background:var(--bg);padding:2rem 1.75rem;display:flex;flex-direction:column;justify-content:flex-end;transition:background .2s;}
-.hstat:hover{background:var(--bg2);}
-.hstat-lbl{font-size:.67rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin-bottom:.45rem;}
-.hstat-n{font-family:'Lora',serif;font-size:3.2rem;font-weight:600;color:var(--accent2);line-height:1;letter-spacing:-.04em;margin-bottom:.3rem;}
-.hstat-n .acc{color:var(--accent2);font-family:'Lora',serif;}
-.acc-plus{font-size:2rem;font-weight:600;color:var(--accent2);vertical-align:middle;line-height:1;}
-.hstat-sub{font-size:.76rem;color:var(--muted);line-height:1.5;}
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;gap:.375rem;font-size:.875rem;font-weight:500;padding:.625rem 1.25rem;border-radius:8px;transition:all .15s;cursor:pointer;border:none}
+.btn-dark{background:var(--gray-900);color:#fff}.btn-dark:hover{background:var(--gray-800)}
+.btn-ghost{background:transparent;color:var(--gray-700);border:1.5px solid var(--gray-200)}.btn-ghost:hover{background:var(--gray-50);border-color:var(--gray-300)}
+.btn-blue{background:var(--blue-600);color:#fff}.btn-blue:hover{background:var(--blue-700)}
+.btn-full{width:100%;justify-content:center}
 
-/* ── LAYOUT ── */
-.container{max-width:1100px;margin:0 auto;padding:0 4rem;}
-.sec{padding:7rem 0;}
-.sec-alt{background:var(--bg2);}
-.eyebrow{font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent2);margin-bottom:.85rem;display:flex;align-items:center;gap:.65rem;}
-.eyebrow::before{content:'';display:block;width:24px;height:2px;background:var(--accent2);border-radius:1px;}
-.sec-title{font-family:'Lora',serif;font-size:clamp(2.2rem,3.5vw,3.4rem);font-weight:600;color:var(--ink);line-height:1.1;letter-spacing:-.025em;margin-bottom:1rem;}
-.sec-title em{font-style:italic;color:var(--muted);}
-.sec-sub{font-size:.97rem;color:var(--muted);max-width:520px;line-height:1.85;margin-bottom:4rem;}
+/* TAGS */
+.tag{font-size:.6875rem;font-weight:500;padding:.1875rem .625rem;border-radius:999px;letter-spacing:.01em}
+.tag-gray{background:var(--gray-100);color:var(--gray-700)}
+.tag-blue{background:var(--blue-50);color:var(--blue-700)}
+.card-tags{display:flex;flex-wrap:wrap;gap:.375rem;padding-top:.25rem}
 
-/* ── PRODUCTS ── */
-.prod-grid{display:flex;flex-direction:column;gap:1.5rem;}
-.pc{
-  background:var(--bg);border:1.5px solid var(--rule);
-  border-radius:16px;padding:2.25rem 2.5rem;
-  display:grid;grid-template-columns:340px 1fr;gap:3rem;align-items:start;
-  transition:border-color .25s,box-shadow .25s,transform .25s;
-  position:relative;overflow:hidden;
-}
-.pc::before{content:'';position:absolute;top:0;left:0;right:0;height:2.5px;opacity:0;transition:opacity .3s;}
-.pc:hover{border-color:var(--rule2);box-shadow:0 12px 40px rgba(0,0,0,.07);transform:translateY(-3px);}
-.pc:hover::before{opacity:1;}
-.pc.ta::before{background:linear-gradient(90deg,var(--accent),var(--accent2));}
-.pc.tt::before{background:linear-gradient(90deg,var(--teal),#0ea5e9);}
-.pc.tg::before{background:linear-gradient(90deg,var(--green),var(--teal));}
-.pc.ts::before{background:linear-gradient(90deg,var(--sky),var(--accent2));}
-.pc.tam::before{background:linear-gradient(90deg,var(--amber),#f59e0b);}
-.pc.tr::before{background:linear-gradient(90deg,var(--rose),var(--amber));}
-.pc.tp::before{background:linear-gradient(90deg,var(--purple),var(--accent));}
-.flagship{background:linear-gradient(150deg,#eff6ff 0%,#f0f9ff 55%,#f5f3ff 100%);}
-.flagship::before{opacity:.7 !important;}
-.pc-left{display:flex;flex-direction:column;}
-.pc-right{display:flex;flex-direction:column;gap:.75rem;padding-top:.2rem;}
-.pc-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1.2rem;}
-.pc-ico{width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.35rem;flex-shrink:0;}
-.ia{background:var(--accent-l);}.it{background:var(--teal-l);}.ig{background:var(--green-l);}
-.is{background:var(--sky-l);}.iam{background:var(--amber-l);}.ir{background:var(--rose-l);}
-.ip{background:var(--purple-l);}.in2{background:var(--bg3);}
-.pbadge{font-size:.61rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.22rem .6rem;border-radius:5px;}
-.bfl{background:#dbeafe;color:var(--accent);}
-.blt{background:var(--green-l);color:var(--green);}
-.band{background:var(--teal-l);color:var(--teal);}
-.bwb{background:var(--sky-l);color:var(--sky);}
-.bsaas{background:var(--purple-l);color:var(--purple);}
-.bb2g{background:var(--amber-l);color:var(--amber);}
-.bhth{background:var(--rose-l);color:var(--rose);}
-.pname{font-family:'Lora',serif;font-size:1.22rem;font-weight:600;color:var(--ink);margin-bottom:.25rem;letter-spacing:-.015em;}
-.purl{font-size:.72rem;font-weight:600;color:var(--accent2);margin-bottom:.65rem;display:flex;align-items:center;gap:.3rem;}
-.pdesc{font-size:.85rem;color:var(--muted);line-height:1.75;flex:1;margin-bottom:1rem;}
-.ptags{display:flex;flex-wrap:wrap;gap:.32rem;margin-bottom:.5rem;}
-.ptag{font-size:.63rem;font-weight:500;padding:.18rem .5rem;border-radius:5px;background:var(--bg3);border:1px solid var(--rule);color:var(--muted);}
-.pstats{display:flex;gap:1.1rem;padding-top:1rem;border-top:1px solid var(--rule);margin-top:.5rem;}
-.ps strong{display:block;font-size:1rem;font-weight:700;color:var(--ink);}
-.ps span{font-size:.63rem;color:var(--faint);}
-.plink{
-  display:inline-flex;align-items:center;gap:.3rem;
-  font-size:.76rem;font-weight:600;color:var(--accent2);
-  margin-top:1rem;transition:gap .2s;
-  background:none;border:none;cursor:pointer;
-  font-family:'Sora',sans-serif;padding:0;
-}
-.plink::after{content:'→';}
-.plink:hover{gap:.55rem;color:var(--accent);}
-.pc-bullets{display:flex;flex-direction:column;gap:.55rem;margin-bottom:.75rem;}
-.pbul{display:flex;gap:.65rem;align-items:flex-start;font-size:.84rem;color:var(--ink3);line-height:1.6;}
-.pbul::before{content:'→';color:var(--accent2);flex-shrink:0;font-size:.72rem;margin-top:.22rem;font-weight:700;}
+/* DIVIDERS */
+.divider{border:none;border-top:1px solid var(--gray-200);max-width:1120px;margin:0 auto}
 
-/* ── REPOS ── */
-.rgrid{display:grid;grid-template-columns:repeat(3,1fr);background:var(--rule);gap:1px;border:1px solid var(--rule);border-radius:14px;overflow:hidden;}
-.rc{background:var(--bg);padding:1.5rem;display:block;transition:background .2s;text-decoration:none;color:inherit;}
-.rc:hover{background:var(--bg2);}
-.rc-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:.75rem;}
-.rlang{display:flex;align-items:center;gap:.4rem;font-size:.67rem;color:var(--faint);font-weight:500;}
-.ldot{width:8px;height:8px;border-radius:50%;}
-.l-ts{background:#3178c6;}.l-js{background:#b48900;}.l-html{background:#e34c26;}
-.rcname{font-size:.88rem;font-weight:600;color:var(--ink);margin-bottom:.3rem;}
-.rcdesc{font-size:.77rem;color:var(--muted);line-height:1.58;margin-bottom:.75rem;}
-.rcfoot{display:flex;justify-content:space-between;font-size:.65rem;color:var(--faint);}
-.rccm{background:var(--bg3);padding:.16rem .48rem;border-radius:4px;border:1px solid var(--rule);font-weight:600;color:var(--ink3);}
+/* FOOTER */
+.footer-wrap{background:var(--gray-900);color:#fff}
+.footer-inner{max-width:1120px;margin:0 auto;padding:5rem 1.5rem;text-align:center}
+.footer-inner h2{font-size:2.25rem;font-weight:700;letter-spacing:-.03em;margin-bottom:.875rem;line-height:1.2}
+.footer-inner p{font-size:.9375rem;color:rgba(255,255,255,.6);max-width:500px;margin:0 auto 2rem;line-height:1.75}
+.footer-links{display:flex;justify-content:center;gap:1.5rem;margin-top:2rem;flex-wrap:wrap}
+.footer-links a{font-size:.8125rem;font-weight:500;color:rgba(255,255,255,.4);transition:color .15s;cursor:pointer}
+.footer-links a:hover{color:#fff}
+.footer-copy{background:var(--gray-900);border-top:1px solid rgba(255,255,255,.08);text-align:center;padding:1.25rem;font-size:.75rem;color:rgba(255,255,255,.25)}
+
+/* ── HOME ── */
+.hero{display:grid;grid-template-columns:1fr 300px;gap:4rem;align-items:center;padding:5rem 1.5rem 4.5rem;max-width:1120px;margin:0 auto}
+.hero-eyebrow{display:inline-flex;align-items:center;font-size:.8125rem;font-weight:500;color:var(--blue-700);background:var(--blue-50);border:1px solid var(--blue-100);padding:.3125rem .875rem;border-radius:999px;margin-bottom:1.5rem}
+.hero h1{font-size:3.75rem;font-weight:700;line-height:1.05;letter-spacing:-.04em;margin-bottom:1.25rem}
+.hero-tagline{font-size:1.125rem;font-weight:500;margin-bottom:.75rem}
+.hero-desc{font-size:.9375rem;color:var(--gray-500);line-height:1.75;margin-bottom:2rem;max-width:480px}
+.hero-btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.hero-img-col{display:flex;align-items:center;justify-content:center}
+.hero-img-wrap{width:100%;max-width:280px}
+.hero-img-wrap img{width:100%;height:360px;object-fit:cover;object-position:center top;border-radius:16px;display:block;box-shadow:0 4px 24px rgba(0,0,0,.10)}
+
+.section-wrap{padding:4.5rem 1.5rem;max-width:1120px;margin:0 auto}
+.section-header{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:2rem}
+.section-title{font-size:1.5rem;font-weight:700;letter-spacing:-.02em}
+.section-link{font-size:.875rem;font-weight:500;color:var(--blue-600);cursor:pointer}.section-link:hover{color:var(--blue-700)}
+.cases-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+.case-card{border:1px solid var(--gray-200);border-radius:12px;padding:1.5rem;background:var(--white);display:flex;flex-direction:column;gap:.75rem;transition:box-shadow .2s,border-color .2s;cursor:pointer}
+.case-card:hover{border-color:var(--gray-300);box-shadow:0 4px 20px rgba(0,0,0,.07)}
+.card-meta{font-size:.75rem;font-weight:500;color:var(--gray-500);letter-spacing:.02em}
+.card-title{font-size:1rem;font-weight:600;line-height:1.4}
+.card-desc{font-size:.875rem;color:var(--gray-500);line-height:1.7;flex:1}
+
+/* ── CASE STUDIES ── */
+.page-hero{max-width:1120px;margin:0 auto;padding:4rem 1.5rem 3rem}
+.page-eyebrow{font-size:.8125rem;font-weight:500;color:var(--blue-700);background:var(--blue-50);border:1px solid var(--blue-100);padding:.3125rem .875rem;border-radius:999px;display:inline-flex;margin-bottom:1.25rem}
+.page-hero h1{font-size:2.5rem;font-weight:700;letter-spacing:-.03em;margin-bottom:.875rem;line-height:1.15}
+.page-hero p{font-size:1rem;color:var(--gray-500);line-height:1.75;max-width:560px}
+.cs-grid{max-width:1120px;margin:0 auto;padding:3rem 1.5rem 5rem;display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem}
+.cs-card{border:1px solid var(--gray-200);border-radius:12px;overflow:hidden;background:var(--white);display:flex;flex-direction:column;transition:box-shadow .2s,border-color .2s}
+.cs-card:hover{border-color:var(--gray-300);box-shadow:0 4px 24px rgba(0,0,0,.08)}
+
+/* SCREENSHOT AREA */
+.cs-screenshot{width:100%;height:200px;background:var(--gray-100);overflow:hidden;position:relative;border-bottom:1px solid var(--gray-200);flex-shrink:0}
+.cs-screenshot img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;transition:transform .4s ease}
+.cs-card:hover .cs-screenshot img{transform:scale(1.03)}
+.cs-screenshot-loading{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;background:var(--gray-50);color:var(--gray-400);font-size:.78rem}
+.cs-screenshot-loading .site-icon{font-size:2rem}
+.cs-screenshot-loading .site-label{font-weight:500;color:var(--gray-500)}
+.cs-screenshot img.loaded + .cs-screenshot-loading{display:none}
+
+/* Browser chrome mockup bar */
+.browser-bar{background:#f1f3f4;border-bottom:1px solid var(--gray-200);padding:.35rem .75rem;display:flex;align-items:center;gap:.5rem;flex-shrink:0}
+.browser-dots{display:flex;gap:.3rem}
+.browser-dot{width:10px;height:10px;border-radius:50%}
+.bd-red{background:#ff5f57}
+.bd-yellow{background:#febc2e}
+.bd-green{background:#28c840}
+.browser-url{flex:1;background:var(--white);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;font-size:.7rem;color:var(--gray-500);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+.cs-body{padding:1.5rem;display:flex;flex-direction:column;gap:.875rem;flex:1}
+.cs-meta{font-size:.75rem;font-weight:500;color:var(--gray-500);letter-spacing:.02em}
+.cs-title{font-size:1.0625rem;font-weight:700;line-height:1.35}
+.cs-block{margin-top:.1rem}
+.cs-label{font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray-400);margin-bottom:.3rem}
+.cs-text{font-size:.875rem;color:var(--gray-700);line-height:1.65}
+.cs-metrics{display:flex;gap:1.25rem;padding:.875rem 1rem;background:var(--gray-50);border-radius:8px;flex-wrap:wrap}
+.cs-metric-val{font-size:1.25rem;font-weight:700;color:var(--gray-900);letter-spacing:-.02em;display:block}
+.cs-metric-label{font-size:.68rem;color:var(--gray-500);margin-top:.1rem}
+.cs-link{font-size:.8125rem;font-weight:500;color:var(--blue-600);display:inline-flex;align-items:center;gap:.25rem}
+.cs-link:hover{color:var(--blue-700)}
 
 /* ── ABOUT ── */
-.about-layout{display:grid;grid-template-columns:60fr 40fr;gap:5rem;align-items:start;}
-.about-body p{font-size:.95rem;color:var(--ink3);line-height:1.87;margin-bottom:1.25rem;}
-.about-body p strong{color:var(--ink);font-weight:700;}
-.about-body p em{font-style:italic;color:var(--muted);}
-.teach-box{background:var(--bg2);border:1.5px solid var(--rule);border-radius:16px;padding:1.9rem;}
-.tb-hd{display:flex;align-items:center;gap:.75rem;margin-bottom:1.5rem;}
-.tb-ico{width:40px;height:40px;border-radius:10px;background:var(--accent-l);display:flex;align-items:center;justify-content:center;font-size:1.1rem;}
-.tb-ttl{font-family:'Lora',serif;font-size:1.05rem;font-weight:600;color:var(--ink);letter-spacing:-.01em;}
-.tb-sub{font-size:.74rem;color:var(--muted);margin-top:.1rem;}
-.tb-list{display:flex;flex-direction:column;gap:.85rem;}
-.tb-item{display:flex;gap:.7rem;align-items:flex-start;padding:.85rem .95rem;background:var(--bg);border:1px solid var(--rule);border-radius:10px;}
-.tb-ico2{font-size:.95rem;flex-shrink:0;margin-top:.05rem;}
-.tb-name{font-size:.8rem;font-weight:600;color:var(--ink);margin-bottom:.16rem;}
-.tb-desc{font-size:.73rem;color:var(--muted);line-height:1.6;}
+.about-outer{background:var(--gray-50);border-top:1px solid var(--gray-200);border-bottom:1px solid var(--gray-200)}
+.about-inner{max-width:1120px;margin:0 auto;padding:4rem 1.5rem;display:grid;grid-template-columns:260px 1fr;gap:4.5rem;align-items:start}
+.about-photo-wrap img{width:100%;border-radius:16px;display:block;object-fit:cover;object-position:center top;aspect-ratio:3/4;box-shadow:0 4px 20px rgba(0,0,0,.09)}
+.about-caption{margin-top:.875rem;text-align:center}
+.about-caption .name{font-size:.9375rem;font-weight:600}
+.about-caption .role{font-size:.78rem;color:var(--gray-500);margin-top:.15rem}
+.about-caption .loc{font-size:.78rem;color:var(--blue-600);font-weight:500;margin-top:.2rem}
+.about-text h2{font-size:1.75rem;font-weight:700;letter-spacing:-.025em;margin-bottom:1.25rem;line-height:1.2}
+.about-text p{font-size:.9375rem;color:var(--gray-500);line-height:1.8;margin-bottom:1rem}
+.about-text p strong{color:var(--gray-900);font-weight:600}
+.creds-list{margin-top:2rem;display:flex;flex-direction:column;gap:.75rem}
+.cred-card{background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:1rem 1.125rem;display:flex;gap:.875rem;align-items:flex-start}
+.cred-icon{font-size:1.2rem;flex-shrink:0;margin-top:.1rem}
+.cred-name{font-size:.875rem;font-weight:600}
+.cred-org{font-size:.8rem;font-weight:500;color:var(--blue-600);margin-top:.15rem}
+.cred-note{font-size:.78rem;color:var(--gray-500);margin-top:.3rem;line-height:1.55}
 
-/* ── SKILLS ── */
-.skills-layout{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;}
-.sg{background:var(--bg);border:1.5px solid var(--rule);border-radius:14px;padding:1.75rem;}
-.sglbl{font-size:.66rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-bottom:1.15rem;display:flex;align-items:center;gap:.6rem;}
-.sglbl::after{content:'';flex:1;height:1px;background:var(--rule);}
-.si-list{display:flex;flex-direction:column;gap:.6rem;}
-.si{display:flex;justify-content:space-between;align-items:center;gap:1rem;}
-.si-name{font-size:.83rem;font-weight:500;color:var(--ink3);}
-.si-bar{width:96px;height:3px;background:var(--bg3);border-radius:2px;overflow:hidden;flex-shrink:0;}
-.si-fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:2px;}
-.stack-all{grid-column:span 2;}
-.stack-box{background:var(--bg);border:1.5px solid var(--rule);border-radius:14px;padding:1.75rem;}
-.st-row{margin-bottom:1.1rem;}
-.st-row:last-child{margin-bottom:0;}
-.st-lbl{font-size:.65rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-bottom:.6rem;}
-.st-pills{display:flex;flex-wrap:wrap;gap:.4rem;}
-.sp{font-size:.74rem;font-weight:500;padding:.28rem .75rem;background:var(--bg2);border:1.5px solid var(--rule);border-radius:100px;color:var(--ink3);transition:all .2s;cursor:default;}
-.sp:hover{border-color:var(--accent2);color:var(--accent);background:var(--accent-l);}
-.sp.hl{border-color:var(--accent-m);color:var(--accent);background:var(--accent-l);}
+/* PRODUCTS MINI — with screenshot */
+.products-mini-wrap{max-width:1120px;margin:0 auto;padding:4rem 1.5rem}
+.products-mini-wrap h2{font-size:1.5rem;font-weight:700;letter-spacing:-.02em;margin-bottom:1.75rem}
+.products-mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.product-mini{border:1px solid var(--gray-200);border-radius:12px;overflow:hidden;background:var(--white);transition:box-shadow .2s,border-color .2s}
+.product-mini:hover{box-shadow:0 4px 20px rgba(0,0,0,.08);border-color:var(--gray-300);transform:translateY(-2px)}
+.pm-screenshot{width:100%;height:140px;overflow:hidden;background:var(--gray-100);position:relative;border-bottom:1px solid var(--gray-200)}
+.pm-screenshot img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;transition:transform .4s}
+.product-mini:hover .pm-screenshot img{transform:scale(1.04)}
+.pm-body{padding:1rem}
+.pm-header{display:flex;align-items:center;gap:.625rem;margin-bottom:.5rem}
+.pm-icon{font-size:1.25rem;flex-shrink:0}
+.pm-name{font-size:.9rem;font-weight:600}
+.pm-url{font-size:.72rem;color:var(--blue-600);font-weight:500;margin-top:.1rem}
+.pm-desc{font-size:.8rem;color:var(--gray-500);margin-top:.5rem;line-height:1.6}
 
-/* ── TIMELINE ── */
-.tl-wrap{display:grid;grid-template-columns:200px 1fr;gap:0;}
-.tl-nav{border-right:1px solid var(--rule);padding-right:2.5rem;}
-.tlbtn{
-  display:flex;align-items:center;gap:.65rem;
-  width:100%;text-align:left;background:none;border:none;cursor:pointer;
-  padding:.6rem 0;font-family:'Sora',sans-serif;font-size:.76rem;
-  font-weight:500;color:var(--faint);transition:color .2s;
+/* ── CONTACT ── */
+.contact-wrap{max-width:1120px;margin:0 auto;padding:3.5rem 1.5rem 5rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+.contact-col h2{font-size:1.25rem;font-weight:700;margin-bottom:1.5rem;letter-spacing:-.015em}
+.contact-item{display:flex;align-items:flex-start;gap:1rem;padding:1.25rem;border:1px solid var(--gray-200);border-radius:12px;background:var(--white);margin-bottom:.875rem;transition:box-shadow .2s,border-color .2s;text-decoration:none;color:inherit}
+.contact-item:hover{border-color:var(--gray-300);box-shadow:0 3px 16px rgba(0,0,0,.06)}
+.ci-icon{width:40px;height:40px;border-radius:10px;background:var(--blue-50);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.ci-label{font-size:.72rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--gray-400);margin-bottom:.25rem}
+.ci-value{font-size:.9375rem;font-weight:500}
+.ci-note{font-size:.78rem;color:var(--gray-500);margin-top:.2rem}
+.social-head{font-size:.875rem;font-weight:600;margin:1.75rem 0 .875rem}
+.social-link{display:flex;align-items:center;gap:.875rem;padding:.875rem 1rem;border:1px solid var(--gray-200);border-radius:10px;background:var(--white);font-size:.875rem;font-weight:500;color:var(--gray-700);transition:all .15s;margin-bottom:.5rem;text-decoration:none}
+.social-link:hover{border-color:var(--gray-300);background:var(--gray-50)}
+.sl-icon{font-size:1.1rem;width:26px;text-align:center;flex-shrink:0}
+.sl-label{flex:1}.sl-url{font-size:.72rem;color:var(--gray-400)}
+.open-to-card{border:1px solid var(--gray-200);border-radius:12px;background:var(--gray-50);padding:2rem}
+.open-to-card h2{font-size:1.25rem;font-weight:700;margin-bottom:.75rem}
+.open-to-card p{font-size:.875rem;color:var(--gray-500);line-height:1.7;margin-bottom:1.5rem}
+.avail-badge{display:inline-flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:500;color:#065f46;background:#d1fae5;border:1px solid #a7f3d0;padding:.375rem .875rem;border-radius:999px;margin-bottom:1.25rem}
+.avail-dot{width:7px;height:7px;border-radius:50%;background:#10b981;flex-shrink:0}
+.roles-list{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.75rem}
+.role-item{display:flex;align-items:center;gap:.75rem;padding:.75rem 1rem;background:var(--white);border:1px solid var(--gray-200);border-radius:8px;font-size:.875rem;font-weight:500}
+.role-dot{width:7px;height:7px;border-radius:50%;background:var(--blue-600);flex-shrink:0}
+.stats-mini{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;margin-top:1.5rem}
+.stat-mini{text-align:center;padding:1rem;background:var(--white);border:1px solid var(--gray-200);border-radius:10px}
+.stat-mini-val{font-size:1.5rem;font-weight:700;letter-spacing:-.02em;display:block}
+.stat-mini-label{font-size:.7rem;color:var(--gray-500);margin-top:.15rem}
+
+/* ANIMATIONS */
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.page.active .hero>*{animation:fadeUp .5s ease both}
+.page.active .hero>*:nth-child(1){animation-delay:.05s}
+.page.active .hero>*:nth-child(2){animation-delay:.15s}
+
+/* RESPONSIVE */
+@media(max-width:840px){
+  .hero{grid-template-columns:1fr;padding:3rem 1.5rem;gap:2.5rem}
+  .hero-img-col{justify-content:flex-start}
+  .hero-img-wrap{max-width:200px}
+  .hero-img-wrap img{height:260px}
+  .cases-grid,.cs-grid{grid-template-columns:1fr}
+  .about-inner{grid-template-columns:1fr;gap:2rem}
+  .products-mini-grid{grid-template-columns:repeat(2,1fr)}
+  .contact-wrap{grid-template-columns:1fr}
+  .nav-links li:not(:last-child) a{display:none}
 }
-.tlbtn .d{width:8px;height:8px;border-radius:50%;background:var(--rule2);flex-shrink:0;transition:background .2s;}
-.tlbtn:hover{color:var(--ink3);}
-.tlbtn.on{color:var(--ink);font-weight:700;}
-.tlbtn.on .d{background:var(--accent2);}
-.tlbtn.now .d{background:var(--green);animation:pulse 2s infinite;}
-.tl-pane{padding-left:3rem;}
-.tpanel{display:none;}
-.tpanel.on{display:block;animation:up .35s ease both;}
-.tp-per{font-size:.67rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin-bottom:.35rem;}
-.tp-role{font-family:'Lora',serif;font-size:1.7rem;font-weight:600;color:var(--ink);letter-spacing:-.025em;margin-bottom:.15rem;}
-.tp-org{font-size:.87rem;color:var(--accent2);font-weight:600;margin-bottom:.9rem;}
-.tp-body{font-size:.86rem;color:var(--muted);line-height:1.82;max-width:560px;margin-bottom:1rem;}
-.tp-bullets{display:flex;flex-direction:column;gap:.48rem;}
-.tbul{display:flex;gap:.65rem;align-items:flex-start;font-size:.84rem;color:var(--ink3);line-height:1.62;}
-.tbul::before{content:'→';color:var(--accent2);flex-shrink:0;font-size:.74rem;margin-top:.2rem;}
-.tp-chips{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:1rem;}
-.tchip{font-size:.63rem;font-weight:500;padding:.18rem .5rem;border-radius:5px;background:var(--bg2);border:1px solid var(--rule);color:var(--muted);}
-
-/* ── EDU ── */
-.edu-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-top:4.5rem;}
-.ecard{background:var(--bg);border:1.5px solid var(--rule);border-radius:13px;padding:1.65rem;display:flex;gap:1rem;transition:border-color .2s,box-shadow .2s;}
-.ecard:hover{border-color:var(--rule2);box-shadow:0 4px 16px rgba(0,0,0,.05);}
-.eico{width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;}
-.e-deg{font-size:.84rem;font-weight:700;color:var(--ink);margin-bottom:.16rem;}
-.e-inst{font-size:.76rem;color:var(--accent2);font-weight:600;margin-bottom:.14rem;}
-.e-year{font-size:.7rem;color:var(--faint);}
-
-/* ── CTA ── */
-.cta-sec{background:var(--ink);padding:8.5rem 0;text-align:center;position:relative;overflow:hidden;}
-.cta-sec::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:800px;height:400px;background:radial-gradient(ellipse,rgba(59,130,246,.14) 0%,transparent 65%);}
-.cta-inner{position:relative;z-index:1;}
-.cta-h{font-family:'Lora',serif;font-size:clamp(2.5rem,5vw,5.5rem);font-weight:600;color:#fff;line-height:1.0;letter-spacing:-.025em;margin-bottom:1.5rem;}
-.cta-h em{color:#93c5fd;font-style:italic;}
-.cta-sub{font-size:.97rem;color:rgba(255,255,255,.5);max-width:520px;margin:0 auto 2.75rem;line-height:1.88;}
-.roles-wrap{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center;margin-bottom:2.75rem;}
-.role-pill{font-size:.73rem;font-weight:600;padding:.38rem 1rem;border-radius:100px;border:1.5px solid rgba(59,130,246,.35);color:#93c5fd;background:rgba(59,130,246,.1);letter-spacing:.04em;}
-.cta-btns{display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap;}
-.cl-main{display:inline-flex;align-items:center;gap:.4rem;background:var(--accent2);color:#fff;font-size:.9rem;font-weight:600;padding:.9rem 2.1rem;border-radius:8px;transition:all .2s;text-decoration:none;}
-.cl-main:hover{background:var(--accent);transform:translateY(-1px);}
-.cl-out{display:inline-flex;align-items:center;gap:.4rem;background:rgba(255,255,255,.07);color:rgba(255,255,255,.8);font-size:.9rem;font-weight:500;padding:.9rem 1.6rem;border-radius:8px;border:1.5px solid rgba(255,255,255,.12);transition:all .2s;text-decoration:none;}
-.cl-out:hover{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.28);}
-
-/* ── FOOTER ── */
-footer{background:var(--ink2);padding:2.25rem 0;}
-.footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.25rem;}
-.f-copy{font-size:.76rem;color:rgba(255,255,255,.3);}
-.f-copy strong{color:rgba(255,255,255,.55);font-weight:700;display:block;margin-bottom:.1rem;}
-.f-links{display:flex;flex-wrap:wrap;gap:1.75rem;}
-.f-links a{font-size:.73rem;color:rgba(255,255,255,.3);transition:color .2s;text-decoration:none;}
-.f-links a:hover{color:#93c5fd;}
-hr.rule{border:none;border-top:1px solid var(--rule);}
-
-/* ── RESPONSIVE ── */
-@media(max-width:1100px){
-  .hero-inner{grid-template-columns:1fr;gap:3rem;padding:4rem 0 2rem;}
-  .hero-stats{grid-template-columns:repeat(3,1fr);grid-template-rows:auto;}
-  .pc{grid-template-columns:260px 1fr;gap:2rem;}
-  .skills-layout{grid-template-columns:1fr;}
-  .stack-all{grid-column:span 1;}
-  .tl-wrap{grid-template-columns:1fr;}
-  .tl-nav{border-right:none;border-bottom:1px solid var(--rule);padding:0 0 1.5rem;display:flex;flex-wrap:wrap;gap:.5rem;}
-  .tl-pane{padding-left:0;padding-top:2rem;}
-  .edu-row{grid-template-columns:1fr 1fr;}
-  .about-layout{grid-template-columns:1fr;gap:2.5rem;}
-  .container{padding:0 2.5rem;}
-}
-@media(max-width:768px){
-  nav{padding:0 1.25rem;}
-  .nav-links,.hire-btn{display:none;}
-  .burger{display:flex;}
-  .container{padding:0 1.25rem;}
-  .hero{padding:0 1.25rem;padding-top:60px;}
-  .hero-inner{gap:2rem;}
-  .hero-name{white-space:normal;}
-  .hero-stats{grid-template-columns:1fr 1fr;}
-  .sec{padding:4rem 0;}
-  .pc{grid-template-columns:1fr;gap:1.5rem;padding:1.75rem;}
-  .rgrid{grid-template-columns:1fr;}
-  .edu-row{grid-template-columns:1fr;}
-  .cta-sec{padding:5rem 0;}
-  footer{padding:1.75rem 0;}
-  .footer-inner{flex-direction:column;align-items:flex-start;}
-}
+@media(max-width:540px){.products-mini-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 
-<!-- NAV — all internal links use onclick="navTo('id')" to avoid iframe interception -->
-<nav>
-  <span class="logo" onclick="navTo('hero')">Rahul Chhallare</span>
-  <ul class="nav-links">
-    <li><button onclick="navTo('work')">Products</button></li>
-    <li><a href="https://github.com/rahulchhallare" target="_blank" rel="noopener noreferrer">GitHub ↗</a></li>
-    <li><button onclick="navTo('about')">About</button></li>
-    <li><button onclick="navTo('skills')">Skills</button></li>
-    <li><button onclick="navTo('experience')">Experience</button></li>
-  </ul>
-  <button class="hire-btn" onclick="navTo('contact')">Let's Connect ↗</button>
-  <button class="burger" id="burger" onclick="toggleNav()">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
-
-<!-- MOBILE NAV -->
-<div class="mob-nav" id="mobnav">
-  <button onclick="navTo('work');closeNav()">Products</button>
-  <a href="https://github.com/rahulchhallare" target="_blank" rel="noopener noreferrer" onclick="closeNav()">GitHub ↗</a>
-  <button onclick="navTo('about');closeNav()">About</button>
-  <button onclick="navTo('skills');closeNav()">Skills</button>
-  <button onclick="navTo('experience');closeNav()">Experience</button>
-  <button class="mob-cta" onclick="navTo('contact');closeNav()">Let's Connect ↗</button>
+<!-- NAV -->
+<div class="nav-wrap">
+  <nav>
+    <span class="nav-logo" onclick="showPage('home')">Rahul Chhallare</span>
+    <ul class="nav-links">
+      <li><a id="nav-home"         onclick="showPage('home')"         class="active">Home</a></li>
+      <li><a id="nav-case-studies" onclick="showPage('case-studies')">Case Studies</a></li>
+      <li><a id="nav-about"        onclick="showPage('about')">About</a></li>
+      <li><a id="nav-contact"      onclick="showPage('contact')">Contact</a></li>
+    </ul>
+  </nav>
 </div>
 
-<!-- HERO -->
-<section id="hero" style="min-height:100vh;display:flex;align-items:center;padding:0 4rem;padding-top:60px;position:relative;overflow:hidden;">
-  <div style="position:absolute;inset:0;background-image:linear-gradient(var(--rule) 1px,transparent 1px),linear-gradient(90deg,var(--rule) 1px,transparent 1px);background-size:60px 60px;opacity:.3;pointer-events:none;"></div>
-  <div style="position:absolute;top:-20%;right:-10%;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(59,130,246,.06) 0%,transparent 65%);pointer-events:none;"></div>
-  <div class="hero-inner">
+<!-- ══════════════ HOME ══════════════ -->
+<div id="page-home" class="page active">
+  <div class="hero">
     <div>
-      <div class="hero-tag"><span class="tag-dot"></span>Open to — AI Agent PM · Forward Deployed PM · Product Owner</div>
-      <h1 class="hero-name">Rahul Chhallare</h1>
-      <p class="hero-role">AI Agent PM · Forward Deployed PM · <em>Product Owner</em></p>
-      <p class="hero-desc">I build AI products — not just roadmaps. <strong>9 live products</strong> spanning a Play Store app, an AI learning platform selected by Perplexity AI, a telehealth platform, a no-code agent builder, and a wellness store. Ex-PM at TVS Motor. MBA from Germany.</p>
+      <div class="hero-eyebrow">AI Agent PM · Forward Deployed PM · Product Owner</div>
+      <h1>Rahul<br>Chhallare</h1>
+      <p class="hero-tagline">From founder execution to scalable AI products.</p>
+      <p class="hero-desc">A working portfolio of shipped products — the problems I tackled, how I scoped them, the risks I planned for, and the metrics I measured.</p>
       <div class="hero-btns">
-        <button class="btn-primary" onclick="navTo('work')">View My Work</button>
-        <a href="https://github.com/rahulchhallare" target="_blank" rel="noopener" class="btn-secondary">GitHub ↗</a>
-        <a href="mailto:rahul@aiagentstudio.ai" class="btn-secondary">Email</a>
-      </div>
-      <div class="hero-pills">
-        <span class="hpill">📍 Pune, India — Open globally</span>
-        <span class="hpill">🔬 Perplexity AI Fellow</span>
-        <span class="hpill">🎓 MBA · TU Nürnberg</span>
-        <span class="hpill">⚙️ B.E. Instrumentation</span>
+        <button class="btn btn-dark" onclick="showPage('case-studies')">View case studies</button>
+        <button class="btn btn-ghost" onclick="showPage('about')">About me</button>
       </div>
     </div>
-    <div class="hero-stats">
-      <div class="hstat"><div class="hstat-lbl">Products shipped</div><div class="hstat-n"><span class="acc">9</span></div><div class="hstat-sub">Live, deployed &amp; running in 2026</div></div>
-      <div class="hstat"><div class="hstat-lbl">Play Store downloads</div><div class="hstat-n"><span class="acc">1K<span class="acc-plus">+</span></span></div><div class="hstat-sub">InstaChat — RAC Innovation Inc.</div></div>
-      <div class="hstat"><div class="hstat-lbl">App store rating</div><div class="hstat-n"><span class="acc">4.2<span style="font-size:2.2rem;vertical-align:middle;">&#9733;</span></span></div><div class="hstat-sub">31 verified Play Store reviews</div></div>
-      <div class="hstat"><div class="hstat-lbl">GitHub commits</div><div class="hstat-n"><span class="acc">82</span></div><div class="hstat-sub">On AIAgentStudio alone</div></div>
-      <div class="hstat"><div class="hstat-lbl">Years in product</div><div class="hstat-n"><span class="acc">5<span class="acc-plus">+</span></span></div><div class="hstat-sub">TVS Motor, EdTech, SaaS, B2G</div></div>
-      <div class="hstat"><div class="hstat-lbl">Repositories</div><div class="hstat-n"><span class="acc">15</span></div><div class="hstat-sub">TypeScript-dominant, production deployed</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- PRODUCTS -->
-<section class="sec sec-alt" id="work">
-  <div class="container">
-    <div class="eyebrow">Products &amp; Ventures</div>
-    <h2 class="sec-title">9 live products.<br><em>Founder-built. Founder-shipped.</em></h2>
-    <p class="sec-sub">Every card links to a live URL or Play Store listing. Full product ownership — concept, PRD, engineering, deployment.</p>
-    <div class="prod-grid">
-
-      <!-- 1. AIAgentStudio -->
-      <div class="pc flagship ta fade">
-        <div class="pc-left">
-          <div class="pc-top"><div class="pc-ico ia">🤖</div><span class="pbadge bfl">Flagship · AI SaaS</span></div>
-          <div class="pname">AIAgentStudio.ai</div>
-          <div class="purl">🌐 aiagentstudio.ai</div>
-          <p class="pdesc">No-code visual AI agent builder — the "Figma for AI agents." Full-stack TypeScript platform with drag-and-drop canvas, AI co-founder chat, agent template marketplace, and India-first integrations (Razorpay, WhatsApp, GST, Tally). Deployed across Replit, Railway &amp; Cursor.</p>
-          <div class="pstats">
-            <div class="ps"><strong>82</strong><span>Commits</span></div>
-            <div class="ps"><strong>3</strong><span>Environments</span></div>
-            <div class="ps"><strong>$49/mo</strong><span>Pricing</span></div>
-            <div class="ps"><strong>Seed</strong><span>Stage</span></div>
-          </div>
-          <a href="https://aiagentstudio.ai" target="_blank" rel="noopener" class="plink">aiagentstudio.ai</a>
-        </div>
-        <div class="pc-right">
-          <div class="pc-bullets">
-            <div class="pbul">Targeting $100K MRR in 90 days — proof for Flourish Ventures seed pitch</div>
-            <div class="pbul">Visual drag-and-drop canvas — agents built without writing a single line of code</div>
-            <div class="pbul">AI co-founder chat scaffolds entire agent logic from plain-English description</div>
-            <div class="pbul">Agent template marketplace with creator revenue-share via Stripe Connect</div>
-            <div class="pbul">India-first integrations: Razorpay, WhatsApp Business API, GST APIs, Tally</div>
-          </div>
-          <div class="ptags"><span class="ptag">TypeScript</span><span class="ptag">React</span><span class="ptag">Drizzle ORM</span><span class="ptag">Vite</span><span class="ptag">Railway</span><span class="ptag">Razorpay</span><span class="ptag">WhatsApp API</span><span class="ptag">Stripe Connect</span></div>
-        </div>
-      </div>
-
-      <!-- 2. AILearnX -->
-      <div class="pc flagship tt fade">
-        <div class="pc-left">
-          <div class="pc-top"><div class="pc-ico ip">🧠</div><span class="pbadge bsaas">Perplexity AI Fellow · Platform</span></div>
-          <div class="pname">AILearnX.com</div>
-          <div class="purl">🌐 ailearnx.com</div>
-          <p class="pdesc">World-class AI learning platform — courses, jobs, competitions, mentorship, events, AI tools &amp; AI agents marketplace. Selected into the Perplexity AI Business Fellowship. Trusted by professionals from Google, Microsoft, Amazon &amp; IBM.</p>
-          <a href="https://ailearnx.com" target="_blank" rel="noopener" class="plink">ailearnx.com</a>
-        </div>
-        <div class="pc-right">
-          <div class="pc-bullets">
-            <div class="pbul">Selected into Perplexity AI Business Fellowship — exclusive global recognition</div>
-            <div class="pbul">Courses, Jobs Board, Competitions &amp; Mentorship under one unified platform</div>
-            <div class="pbul">Built-in AI Agents marketplace and AI Tools directory for practitioners</div>
-            <div class="pbul">Trusted by professionals from Google, Microsoft, Amazon &amp; IBM</div>
-          </div>
-          <div class="ptags"><span class="ptag">AI Education</span><span class="ptag">Jobs Board</span><span class="ptag">Competitions</span><span class="ptag">Mentorship</span><span class="ptag">AI Agents</span><span class="ptag">Perplexity Fellow</span></div>
-        </div>
-      </div>
-
-      <!-- 3. MedPe -->
-      <div class="pc flagship tr fade">
-        <div class="pc-left">
-          <div class="pc-top"><div class="pc-ico ir">🏥</div><span class="pbadge bhth">Live · Telehealth India</span></div>
-          <div class="pname">MedPe.in</div>
-          <div class="purl">🌐 medpe.in</div>
-          <p class="pdesc">Indian telehealth platform — online doctor consultations, prescriptions, and healthcare services. India-first UX with Razorpay payments and privacy-compliant architecture built for India's healthcare regulatory context.</p>
-          <a href="https://medpe.in" target="_blank" rel="noopener" class="plink">medpe.in</a>
-        </div>
-        <div class="pc-right">
-          <div class="pc-bullets">
-            <div class="pbul">Online doctor consultations with instant booking and slot management</div>
-            <div class="pbul">Razorpay-native payments — UPI, cards, netbanking all supported</div>
-            <div class="pbul">Privacy-compliant architecture under India's data protection framework</div>
-            <div class="pbul">Digital prescriptions, health records, and specialist referral flow</div>
-          </div>
-          <div class="ptags"><span class="ptag">Telehealth</span><span class="ptag">India</span><span class="ptag">Razorpay</span><span class="ptag">Healthcare</span><span class="ptag">Digital Prescriptions</span><span class="ptag">UPI</span></div>
-        </div>
-      </div>
-
-      <!-- 4. InstaChat -->
-      <div class="pc tg fade">
-        <div class="pc-left">
-          <div class="pc-top"><div class="pc-ico ig">💬</div><span class="pbadge band">Android · Play Store</span></div>
-          <div class="pname">InstaChat — Secure Messenger</div>
-          <div class="purl">📱 RAC Innovation Inc. · 1K+ · 4.2<span style="color:var(--accent2);">&#9733;</span></div>
-          <p class="pdesc">Secure Android instant messaging app — free voice &amp; video calls, file sharing, offline messages. India's data privacy laws compliant. Proudly Made in India. Published under RAC Innovation Inc.</p>
-          <div class="pstats">
-            <div class="ps"><strong>1K+</strong><span>Downloads</span></div>
-            <div class="ps"><strong>4.2<span style="color:var(--accent2);font-size:.9rem;">&#9733;</span></strong><span>31 reviews</span></div>
-          </div>
-          <a href="https://play.google.com/store/apps/details?id=com.devlomi.instachatt&hl=en_IN" target="_blank" rel="noopener" class="plink">View on Play Store</a>
-        </div>
-        <div class="pc-right">
-          <div class="pc-bullets">
-            <div class="pbul">Free voice &amp; video calls — no per-minute charges, works on any internet connection</div>
-            <div class="pbul">End-to-end secure messaging — no data shared with third parties</div>
-            <div class="pbul">Multimedia sharing — photos, videos, documents and voice messages</div>
-            <div class="pbul">Offline message queue — messages saved until device reconnects</div>
-            <div class="pbul">India's data privacy framework compliant — Made in India, for India</div>
-          </div>
-          <div class="ptags"><span class="ptag">Android</span><span class="ptag">Messaging</span><span class="ptag">Voice/Video</span><span class="ptag">Made in India</span><span class="ptag">RAC Innovation Inc.</span></div>
-        </div>
-      </div>
-
-      <!-- 5. InstaHealthyKart -->
-      <div class="pc tg fade">
-        <div class="pc-left">
-          <div class="pc-top"><div class="pc-ico ig">🥗</div><span class="pbadge blt">Live · E-Commerce</span></div>
-          <div class="pname">InstaHealthyKart.com</div>
-          <div class="purl">🌐 instahealthykart.com</div>
-          <p class="pdesc">India-first health &amp; wellness e-commerce platform — chemical-free, curated products for health-conscious Indian consumers. Full product ownership: catalogue curation, cart, checkout, and fulfilment.</p>
-          <a href="https://instahealthykart.com" target="_blank" rel="noopener" class="plink">instahealthykart.com</a>
-        </div>
-        <div class="pc-right">
-          <div class="pc-bullets">
-            <div class="pbul">Chemical-free product curation — verified wellness brands for Indian consumers</div>
-            <div class="pbul">India-first checkout — Razorpay, UPI, and COD supported</div>
-            <div class="pbul">Full D2C stack: catalogue management, cart, checkout, and order fulfilment</div>
-            <div class="pbul">End-to-end product ownership from domain registration to customer delivery</div>
-          </div>
-          <div class="ptags"><span class="ptag">E-Commerce</span><span class="ptag">Health &amp; Wellness</span><span class="ptag">D2C India</span><span class="ptag">Chemical-free</span><span class="ptag">Razorpay</span></div>
-        </div>
-      </div>
-
-      <!-- 6. HireAIStaff -->
-      <div class="pc ts fade">
-        <div class="pc-left">
-          <div class="pc-top"><div class="pc-ico is">👥</div><span class="pbadge bwb">Live · Vercel</span></div>
-          <div class="pname">HireAIStaff</div>
-          <div class="purl">🌐 hire-ai-staff.vercel.app</div>
-          <p class="pdesc">Hire an AI employee in 60 seconds — Marketing, Legal, Financial, Support, R&amp;D, and Custom AI roles at $199–$499/mo. Built with Next.js 13, deployed on Vercel.</p>
-          <a href="https://hire-ai-staff.vercel.app" target="_blank" rel="noopener" class="plink">hire-ai-staff.vercel.app</a>
-        </div>
-        <div class="pc-right">
-          <div class="pc-bullets">
-            <div class="pbul">6 AI employee types: Marketing, Legal, Financial, Support, R&amp;D, Custom</div>
-            <div class="pbul">Tiered pricing at $199, $299, and $499/mo — clear value tiers</div>
-            <div class="pbul">60-second onboarding from landing to activated AI role</div>
-            <div class="pbul">API-ready architecture — integrates with existing business tools</div>
-          </div>
-          <div class="ptags"><span class="ptag">Next.js 13</span><span class="ptag">JavaScript</span><span class="ptag">Tailwind</span><span class="ptag">Vercel</span><span class="ptag">AI SaaS</span></div>
-        </div>
-      </div>
-
-      <!-- 7. BookMyHelicopter -->
-      <div class="pc tam fade">
-        <div class="pc-left">
-          <div class="pc-top"><div class="pc-ico iam">🚁</div><span class="pbadge bb2g">Live · B2G · Maharashtra</span></div>
-          <div class="pname">BookMyHelicopter.in</div>
-          <div class="purl">🌐 bookmyhelicopter.in</div>
-          <p class="pdesc">India's helicopter booking aggregator — 8+ operator partners across 4 service verticals. Consultative pitch to Kumbh Mela 2027 Authority (Nashik-Trimbakeshwar). Maharashtra Govt. EOI partnership structured.</p>
-          <a href="https://bookmyhelicopter.in" target="_blank" rel="noopener" class="plink">bookmyhelicopter.in</a>
-        </div>
-        <div class="pc-right">
-          <div class="pc-bullets">
-            <div class="pbul">8+ helicopter operator partners across Maharashtra and India</div>
-            <div class="pbul">Kumbh Mela 2027 Authority pitch — Nashik-Trimbakeshwar route coverage</div>
-            <div class="pbul">Maharashtra Government EOI partnership for official helicopter services</div>
-            <div class="pbul">4 service verticals: Pilgrimage, Corporate Charter, Tourism, Emergency</div>
-          </div>
-          <div class="ptags"><span class="ptag">Travel Tech</span><span class="ptag">B2G</span><span class="ptag">Marketplace</span><span class="ptag">Kumbh 2027</span><span class="ptag">Maharashtra Govt.</span></div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- GITHUB REPOS -->
-<section class="sec" id="code">
-  <div class="container">
-    <div class="eyebrow">github.com/rahulchhallare · 15 repositories</div>
-    <h2 class="sec-title">Real code.<br><em>Production deployed.</em></h2>
-    <p class="sec-sub">A PM who reads, reviews, and ships code. Multi-environment workflow across Replit, Railway, Cursor, and Vercel.</p>
-    <div class="rgrid">
-      <a class="rc fade" href="https://github.com/rahulchhallare/AIAgentStudio_Replit" target="_blank" rel="noopener">
-        <div class="rc-top"><span style="font-size:1.1rem">🤖</span><div class="rlang"><span class="ldot l-ts"></span>TypeScript</div></div>
-        <div class="rcname">AIAgentStudio_Replit</div>
-        <div class="rcdesc">Full-stack AI agent builder. client/server/shared monorepo. Deployed Replit + Railway.</div>
-        <div class="rcfoot"><span class="rccm">82 commits</span><span>Production</span></div>
-      </a>
-      <a class="rc fade" href="https://github.com/rahulchhallare/aiagentstudio-v1" target="_blank" rel="noopener">
-        <div class="rc-top"><span style="font-size:1.1rem">⚡</span><div class="rlang"><span class="ldot l-ts"></span>TypeScript</div></div>
-        <div class="rcname">aiagentstudio-v1</div>
-        <div class="rcdesc">Production V1 — visual canvas, Shopify-inspired UX, India-first integrations. Cursor IDE.</div>
-        <div class="rcfoot"><span class="rccm">Active</span><span>shadcn/ui</span></div>
-      </a>
-      <a class="rc fade" href="https://github.com/rahulchhallare/AIAgentStudio_Cursor" target="_blank" rel="noopener">
-        <div class="rc-top"><span style="font-size:1.1rem">🖱️</span><div class="rlang"><span class="ldot l-ts"></span>TypeScript</div></div>
-        <div class="rcname">AIAgentStudio_Cursor</div>
-        <div class="rcdesc">Cursor IDE parallel build — multi-environment AI-assisted development workflow.</div>
-        <div class="rcfoot"><span class="rccm">TypeScript</span><span>AI-assisted</span></div>
-      </a>
-      <a class="rc fade" href="https://github.com/rahulchhallare/aiagentstudio-v1-test" target="_blank" rel="noopener">
-        <div class="rc-top"><span style="font-size:1.1rem">🧪</span><div class="rlang"><span class="ldot l-ts"></span>TypeScript</div></div>
-        <div class="rcname">aiagentstudio-v1-test</div>
-        <div class="rcdesc">QA isolation environment for V1. Separate test branch — mature dev process hygiene.</div>
-        <div class="rcfoot"><span class="rccm">Test env</span><span>QA</span></div>
-      </a>
-      <a class="rc fade" href="https://github.com/rahulchhallare/HireAIStaff" target="_blank" rel="noopener">
-        <div class="rc-top"><span style="font-size:1.1rem">🧠</span><div class="rlang"><span class="ldot l-js"></span>JavaScript</div></div>
-        <div class="rcname">HireAIStaff</div>
-        <div class="rcdesc">Live Next.js 13 AI staffing platform. hire-ai-staff.vercel.app. $199–$499/mo.</div>
-        <div class="rcfoot"><span class="rccm">9 commits</span><span>Live · Vercel</span></div>
-      </a>
-      <a class="rc fade" href="https://github.com/rahulchhallare/Tool" target="_blank" rel="noopener">
-        <div class="rc-top"><span style="font-size:1.1rem">🛠️</span><div class="rlang"><span class="ldot l-html"></span>HTML</div></div>
-        <div class="rcname">Tool</div>
-        <div class="rcdesc">Client-side image compression — pure HTML/JS, no dependencies, no upload required.</div>
-        <div class="rcfoot"><span class="rccm">HTML</span><span>Client-side</span></div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<hr class="rule">
-
-<!-- ABOUT -->
-<section class="sec" id="about">
-  <div class="container">
-    <div class="eyebrow">About &amp; Teaching</div>
-    <h2 class="sec-title">Builder who teaches.<br><em>Founder who ships.</em></h2>
-    <div class="about-layout">
-      <div class="about-body">
-        <p>I'm a <strong>full-time founder and AI product manager</strong> based in Pune, India. After five years in enterprise product roles — including leading digital product initiatives at <strong>TVS Motor Company</strong> — I left to build products at the frontier of AI.</p>
-        <p>I founded <strong>AIAgentStudio.ai</strong>, a no-code visual AI agent builder, built in TypeScript from a blank repo to production — visual canvas, AI co-founder chat, agent marketplace, and India-first integrations. I've shipped <strong>9 live products</strong> across AI SaaS, telehealth, health e-commerce, travel, and messaging.</p>
-        <p>I'm a <strong>Perplexity AI Business Fellow</strong>, and my AI learning platform <strong>AILearnX.com</strong> was selected as part of that fellowship. I also built <strong>MedPe.in</strong>, an India-first telehealth platform bringing doctor consultations online with Razorpay-native payments.</p>
-        <p>I hold an <strong>MBA from TU Nürnberg, Germany</strong> and a B.E. in Instrumentation Engineering from the University of Pune. I've consulted internationally at ITQ GmbH in Germany and Las Palmas, Spain.</p>
-      </div>
-      <div>
-        <div class="teach-box fade">
-          <div class="tb-hd">
-            <div class="tb-ico">🎓</div>
-            <div>
-              <div class="tb-ttl">Teaching &amp; Mentorship</div>
-              <div class="tb-sub">Eduinx · CAIPM Program</div>
-            </div>
-          </div>
-          <div class="tb-list">
-            <div class="tb-item"><div class="tb-ico2">📋</div><div><div class="tb-name">CAIPM Certification</div><div class="tb-desc">India's first Certified AI Product Manager program. 15+ professionals certified in LLM product design, agent architectures, and AI go-to-market.</div></div></div>
-            <div class="tb-item"><div class="tb-ico2">🧑‍💻</div><div><div class="tb-name">Live Case Studies</div><div class="tb-desc">Students learn by dissecting AIAgentStudio's real PRD, roadmap, and architecture — not hypotheticals. Teaching from the trenches.</div></div></div>
-            <div class="tb-item"><div class="tb-ico2">🌱</div><div><div class="tb-name">Community &amp; Mentorship</div><div class="tb-desc">Active mentor for AI PMs entering the field. Eduinx also serves as a zero-CAC acquisition channel for the AIAgentStudio ecosystem.</div></div></div>
-          </div>
-        </div>
+    <div class="hero-img-col">
+      <div class="hero-img-wrap">
+        <img src="data:image/png;base64,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" alt="Rahul Chhallare"/>
       </div>
     </div>
   </div>
-</section>
-
-<hr class="rule">
-
-<!-- SKILLS -->
-<section class="sec sec-alt" id="skills">
-  <div class="container">
-    <div class="eyebrow">Skills &amp; Stack</div>
-    <h2 class="sec-title">Strategy. Fluency. <em>Execution.</em></h2>
-    <p class="sec-sub">The combination that AI Agent PM, Forward Deployed PM, and Product Owner roles all demand — product strategy depth, AI technical fluency, and hands-on execution.</p>
-    <div class="skills-layout">
-      <div class="sg fade">
-        <div class="sglbl">Product &amp; AI</div>
-        <div class="si-list">
-          <div class="si"><span class="si-name">AI Product Strategy</span><div class="si-bar"><div class="si-fill" style="width:95%"></div></div></div>
-          <div class="si"><span class="si-name">LLM &amp; Agent Architecture</span><div class="si-bar"><div class="si-fill" style="width:90%"></div></div></div>
-          <div class="si"><span class="si-name">Forward Deployment</span><div class="si-bar"><div class="si-fill" style="width:88%"></div></div></div>
-          <div class="si"><span class="si-name">PRD &amp; Roadmapping</span><div class="si-bar"><div class="si-fill" style="width:93%"></div></div></div>
-          <div class="si"><span class="si-name">RAG Pipelines &amp; Prompt Engineering</span><div class="si-bar"><div class="si-fill" style="width:85%"></div></div></div>
-          <div class="si"><span class="si-name">Competitive Analysis</span><div class="si-bar"><div class="si-fill" style="width:90%"></div></div></div>
-        </div>
+  <hr class="divider"/>
+  <div class="section-wrap">
+    <div class="section-header">
+      <h2 class="section-title">Featured case studies</h2>
+      <a class="section-link" onclick="showPage('case-studies')">All case studies →</a>
+    </div>
+    <div class="cases-grid">
+      <div class="case-card" onclick="showPage('case-studies')">
+        <div class="card-meta">AI SaaS · No-Code · India-first</div>
+        <div class="card-title">AIAgentStudio: No-Code Visual AI Agent Builder</div>
+        <p class="card-desc">Built a visual drag-and-drop canvas with AI co-founder chat — India-first integrations. Targeting 00K MRR at 9/mo.</p>
+        <div class="card-tags"><span class="tag tag-blue">AI / LLM</span><span class="tag tag-gray">TypeScript</span><span class="tag tag-gray">No-Code</span><span class="tag tag-gray">India SaaS</span></div>
       </div>
-      <div class="sg fade">
-        <div class="sglbl">Engineering &amp; GTM</div>
-        <div class="si-list">
-          <div class="si"><span class="si-name">TypeScript / React / Next.js</span><div class="si-bar"><div class="si-fill" style="width:80%"></div></div></div>
-          <div class="si"><span class="si-name">Mobile (Android, Play Store)</span><div class="si-bar"><div class="si-fill" style="width:72%"></div></div></div>
-          <div class="si"><span class="si-name">SaaS Revenue Modeling</span><div class="si-bar"><div class="si-fill" style="width:88%"></div></div></div>
-          <div class="si"><span class="si-name">India Market (Razorpay, GST, WhatsApp)</span><div class="si-bar"><div class="si-fill" style="width:93%"></div></div></div>
-          <div class="si"><span class="si-name">B2G &amp; Enterprise Sales</span><div class="si-bar"><div class="si-fill" style="width:78%"></div></div></div>
-          <div class="si"><span class="si-name">Telehealth &amp; Health Tech</span><div class="si-bar"><div class="si-fill" style="width:74%"></div></div></div>
-        </div>
+      <div class="case-card" onclick="showPage('case-studies')">
+        <div class="card-meta">Telehealth · India · Healthtech</div>
+        <div class="card-title">MedPe: Telehealth Platform for Bharat</div>
+        <p class="card-desc">Privacy-first telehealth with UPI-native checkout, instant booking, and India data protection compliance.</p>
+        <div class="card-tags"><span class="tag tag-blue">Telehealth</span><span class="tag tag-gray">Razorpay</span><span class="tag tag-gray">UPI</span><span class="tag tag-gray">Privacy-first</span></div>
       </div>
-      <div class="stack-all">
-        <div class="stack-box fade">
-          <div class="st-row"><div class="st-lbl">Frontend &amp; Backend</div><div class="st-pills"><span class="sp hl">TypeScript</span><span class="sp hl">React</span><span class="sp hl">Next.js</span><span class="sp">Node.js</span><span class="sp">Vite</span><span class="sp">Tailwind</span><span class="sp">shadcn/ui</span><span class="sp">Drizzle ORM</span><span class="sp">Supabase</span></div></div>
-          <div class="st-row"><div class="st-lbl">AI &amp; APIs</div><div class="st-pills"><span class="sp hl">OpenAI API</span><span class="sp hl">Anthropic API</span><span class="sp">Perplexity</span><span class="sp">MCP</span><span class="sp">RAG</span><span class="sp">Inngest</span></div></div>
-          <div class="st-row"><div class="st-lbl">Payments &amp; Integrations</div><div class="st-pills"><span class="sp hl">Razorpay</span><span class="sp">Stripe Connect</span><span class="sp">WhatsApp Business API</span><span class="sp">GST APIs</span><span class="sp">Google Sheets API</span></div></div>
-          <div class="st-row"><div class="st-lbl">DevOps &amp; Tools</div><div class="st-pills"><span class="sp">Railway</span><span class="sp">Replit</span><span class="sp">Vercel</span><span class="sp">Cursor</span><span class="sp">GitHub</span><span class="sp">ClickUp</span><span class="sp">Android / Play Store</span></div></div>
-        </div>
+      <div class="case-card" onclick="showPage('case-studies')">
+        <div class="card-meta">B2G · Marketplace · Travel India</div>
+        <div class="card-title">BookMyHelicopter: B2G Aggregator for Kumbh Mela 2027</div>
+        <p class="card-desc">8+ operators, Maharashtra Govt. EOI partnership, Kumbh Mela 2027 Authority pitch.</p>
+        <div class="card-tags"><span class="tag tag-blue">B2G</span><span class="tag tag-gray">Marketplace</span><span class="tag tag-gray">Kumbh 2027</span><span class="tag tag-gray">Govt. EOI</span></div>
+      </div>
+      <div class="case-card" onclick="showPage('case-studies')">
+        <div class="card-meta">AI Learning · Platform · Fellowship</div>
+        <div class="card-title">AILearnX: AI Learning Platform Selected by Perplexity AI</div>
+        <p class="card-desc">Unified platform: courses, jobs, competitions, mentorship. Trusted by Google, Microsoft, Amazon & IBM professionals.</p>
+        <div class="card-tags"><span class="tag tag-blue">Perplexity Fellow</span><span class="tag tag-gray">AI Education</span><span class="tag tag-gray">Jobs Board</span><span class="tag tag-gray">Community</span></div>
       </div>
     </div>
   </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section class="sec" id="experience">
-  <div class="container">
-    <div class="eyebrow">Experience</div>
-    <h2 class="sec-title">Enterprise PM turned<br><em>serial AI founder.</em></h2>
-    <p class="sec-sub">Five years at scale across manufacturing, EdTech, and international consulting — then left to build 9 products I wished existed.</p>
-    <div class="tl-wrap">
-      <div class="tl-nav">
-        <button class="tlbtn now on" onclick="showPanel(this,'p0')"><span class="d"></span>AIAgentStudio · AILearnX</button>
-        <button class="tlbtn now"    onclick="showPanel(this,'p1')"><span class="d"></span>MedPe · Other Ventures</button>
-        <button class="tlbtn"        onclick="showPanel(this,'p2')"><span class="d"></span>Perplexity AI Fellow</button>
-        <button class="tlbtn"        onclick="showPanel(this,'p3')"><span class="d"></span>TVS Motor Company</button>
-        <button class="tlbtn"        onclick="showPanel(this,'p4')"><span class="d"></span>Practically EdTech</button>
-        <button class="tlbtn"        onclick="showPanel(this,'p5')"><span class="d"></span>ITQ GmbH · Germany</button>
-      </div>
-      <div class="tl-pane">
-        <div class="tpanel on" id="p0">
-          <div class="tp-per">Apr 2025 – Present</div>
-          <div class="tp-role">Founder &amp; CEO</div>
-          <div class="tp-org">AIAgentStudio.ai · AILearnX.com · Pune</div>
-          <p class="tp-body">Building the no-code visual AI agent builder and AI learning platform. Full-stack TypeScript with 82+ commits. AILearnX selected by Perplexity AI Business Fellowship. Preparing Flourish Ventures seed pitch.</p>
-          <div class="tp-bullets">
-            <div class="tbul">Shipped visual drag-and-drop canvas, AI co-founder interface, and agent marketplace</div>
-            <div class="tbul">AILearnX selected into Perplexity AI Fellowship — trusted by Google, Microsoft, Amazon, IBM</div>
-            <div class="tbul">Targeting $100K MRR at $49/mo + Stripe Connect revenue share</div>
-          </div>
-          <div class="tp-chips"><span class="tchip">TypeScript</span><span class="tchip">React</span><span class="tchip">AI Agents</span><span class="tchip">Seed Stage</span></div>
-        </div>
-        <div class="tpanel" id="p1">
-          <div class="tp-per">Active · Founder</div>
-          <div class="tp-role">Founder</div>
-          <div class="tp-org">MedPe.in · InstaChat · InstaHealthyKart · HireAIStaff · BookMyHelicopter</div>
-          <p class="tp-body">Running five live products simultaneously — each built end-to-end solo with no external engineering team.</p>
-          <div class="tp-bullets">
-            <div class="tbul">MedPe.in — India-first telehealth, online doctor consultations, Razorpay payments</div>
-            <div class="tbul">InstaChat — Android secure messenger, 1K+ downloads, 4.2★, RAC Innovation Inc.</div>
-            <div class="tbul">InstaHealthyKart.com — India D2C wellness e-commerce, chemical-free curation</div>
-            <div class="tbul">HireAIStaff — Next.js 13, live Vercel, $199–$499/mo AI staffing</div>
-            <div class="tbul">BookMyHelicopter.in — 8+ operators, Kumbh Mela 2027 B2G pitch, Maharashtra Govt. EOI</div>
-          </div>
-          <div class="tp-chips"><span class="tchip">Telehealth</span><span class="tchip">Android</span><span class="tchip">E-Commerce</span><span class="tchip">B2G</span></div>
-        </div>
-        <div class="tpanel" id="p2">
-          <div class="tp-per">Mar – Sep 2025</div>
-          <div class="tp-role">Business Fellow</div>
-          <div class="tp-org">Perplexity AI Fellowship</div>
-          <p class="tp-body">Competitively selected for Perplexity AI's Business Fellowship. AILearnX.com was selected as part of this fellowship.</p>
-          <div class="tp-bullets">
-            <div class="tbul">Deep exposure to LLM search products and agentic retrieval architectures</div>
-            <div class="tbul">AILearnX amplified through Perplexity's ecosystem and partner network</div>
-          </div>
-          <div class="tp-chips"><span class="tchip">LLM Search</span><span class="tchip">AI Strategy</span><span class="tchip">Fellowship</span></div>
-        </div>
-        <div class="tpanel" id="p3">
-          <div class="tp-per">2023 – Mar 2025</div>
-          <div class="tp-role">Product Manager</div>
-          <div class="tp-org">TVS Motor Company · Pune</div>
-          <p class="tp-body">Led digital product initiatives at one of India's largest two-wheeler OEMs. Infor ERP automation, instrumentation product lines, cross-functional roadmap delivery.</p>
-          <div class="tp-bullets">
-            <div class="tbul">Led Infor ERP automation across manufacturing and instrumentation lines</div>
-            <div class="tbul">Delivered measurable revenue and lead uplift through AI chatbot and voice interface</div>
-            <div class="tbul">Cross-functional alignment across engineering, design, and business</div>
-          </div>
-          <div class="tp-chips"><span class="tchip">ERP Automation</span><span class="tchip">Enterprise PM</span><span class="tchip">Manufacturing</span></div>
-        </div>
-        <div class="tpanel" id="p4">
-          <div class="tp-per">Dec 2021 – Dec 2022</div>
-          <div class="tp-role">Product Manager</div>
-          <div class="tp-org">Practically EdTech</div>
-          <p class="tp-body">Product role at immersive K-12 learning platform. Interactive content pipelines, learner analytics, and feature delivery.</p>
-          <div class="tp-bullets">
-            <div class="tbul">Built and shipped interactive content features for K-12 learners</div>
-            <div class="tbul">Learner analytics and retention mechanics for consumer growth</div>
-          </div>
-          <div class="tp-chips"><span class="tchip">EdTech</span><span class="tchip">Consumer Product</span><span class="tchip">Analytics</span></div>
-        </div>
-        <div class="tpanel" id="p5">
-          <div class="tp-per">Earlier · International</div>
-          <div class="tp-role">Product &amp; Tech Consulting</div>
-          <div class="tp-org">ITQ GmbH · Germany &amp; Las Palmas · CentPro Engineering</div>
-          <p class="tp-body">Technical and product consulting in Germany and Spain. Enterprise software environments. Foundation for global PM perspective.</p>
-          <div class="tp-bullets">
-            <div class="tbul">Enterprise software consulting at ITQ GmbH, Germany and Las Palmas</div>
-            <div class="tbul">Cross-cultural PM foundations across European enterprise contexts</div>
-          </div>
-          <div class="tp-chips"><span class="tchip">Germany</span><span class="tchip">Enterprise Software</span><span class="tchip">International</span></div>
-        </div>
-      </div>
-    </div>
-    <div class="edu-row">
-      <div class="ecard fade"><div class="eico is">🇩🇪</div><div><div class="e-deg">MBA — Business Administration</div><div class="e-inst">Technical University Nürnberg, Germany</div><div class="e-year">International MBA · Technology Management · Entrepreneurship</div></div></div>
-      <div class="ecard fade"><div class="eico in2">⚙️</div><div><div class="e-deg">B.E. — Instrumentation Engineering</div><div class="e-inst">University of Pune</div><div class="e-year">Systems design · Automation · Engineering foundations</div></div></div>
-      <div class="ecard fade"><div class="eico it">🔬</div><div><div class="e-deg">Perplexity AI Business Fellowship</div><div class="e-inst">Perplexity AI · 2025</div><div class="e-year">AI product strategy · LLM systems · Enterprise deployment</div></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA / CONTACT -->
-<section class="cta-sec" id="contact">
-  <div class="container">
-    <div class="cta-inner">
-      <h2 class="cta-h">Ready to build<br><em>something remarkable?</em></h2>
-      <p class="cta-sub">9 live products. 1K+ app downloads. Seed-stage AI SaaS. Perplexity AI Fellow. The rarest combination — founder execution + enterprise PM rigour + deep AI technical fluency. Open globally from Pune, India.</p>
-      <div class="roles-wrap">
-        <span class="role-pill">AI Agent PM</span>
-        <span class="role-pill">Forward Deployed PM</span>
-        <span class="role-pill">Product Owner · AI Systems</span>
-        <span class="role-pill">Head of Product · AI Startup</span>
-        <span class="role-pill">Solutions PM</span>
-        <span class="role-pill">AI Product Advisory</span>
-      </div>
-      <div class="cta-btns">
-        <a href="mailto:rahul@aiagentstudio.ai" class="cl-main">Email Me →</a>
-        <a href="https://github.com/rahulchhallare" target="_blank" rel="noopener" class="cl-out">GitHub</a>
-        <a href="https://www.linkedin.com/in/rahulchhallare" target="_blank" rel="noopener" class="cl-out">LinkedIn</a>
-        <a href="https://aiagentstudio.ai" target="_blank" rel="noopener" class="cl-out">AIAgentStudio</a>
-        <a href="https://ailearnx.com" target="_blank" rel="noopener" class="cl-out">AILearnX</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="container">
+  <hr class="divider"/>
+  <div class="footer-wrap">
     <div class="footer-inner">
-      <div class="f-copy"><strong>Rahul Arun Chhallare</strong>AI Product Manager · Multi-Venture Founder · Pune &amp; Nagpur, India · 2026</div>
-      <div class="f-links">
-        <a href="https://aiagentstudio.ai" target="_blank" rel="noopener">AIAgentStudio</a>
-        <a href="https://ailearnx.com" target="_blank" rel="noopener">AILearnX</a>
-        <a href="https://medpe.in" target="_blank" rel="noopener">MedPe</a>
-        <a href="https://instahealthykart.com" target="_blank" rel="noopener">InstaHealthyKart</a>
-        <a href="https://play.google.com/store/apps/details?id=com.devlomi.instachatt" target="_blank" rel="noopener">InstaChat</a>
-        <a href="https://hire-ai-staff.vercel.app" target="_blank" rel="noopener">HireAIStaff</a>
-        <a href="https://bookmyhelicopter.in" target="_blank" rel="noopener">BookMyHelicopter</a>
-        <a href="https://github.com/rahulchhallare" target="_blank" rel="noopener">GitHub</a>
+      <h2>Ready to build something remarkable?</h2>
+      <p>9 live products. Perplexity AI Fellow. Seed-stage AI SaaS. Open globally from Pune, India.</p>
+      <button class="btn btn-blue" onclick="showPage('contact')">Get in touch →</button>
+      <div class="footer-links">
+        <a href="https://github.com/rahulchhallare" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/rahulchhallare" target="_blank">LinkedIn</a>
+        <a href="https://aiagentstudio.ai" target="_blank">AIAgentStudio</a>
+        <a href="https://ailearnx.com" target="_blank">AILearnX</a>
+        <a onclick="showPage('contact')">Contact</a>
       </div>
     </div>
   </div>
-</footer>
+  <div class="footer-copy">© 2026 Rahul Chhallare · AI Product Manager · Pune, India</div>
+</div>
+
+<!-- ══════════════ CASE STUDIES ══════════════ -->
+<div id="page-case-studies" class="page">
+  <div class="page-hero">
+    <div class="page-eyebrow">Case Studies</div>
+    <h1>Product thinking,<br>applied to real problems.</h1>
+    <p>Structured case studies — problems I tackled, how I scoped them, risks I planned for, and metrics I measured. Every product is live and deployed.</p>
+  </div>
+  <hr class="divider"/>
+
+  <div class="cs-grid">
+
+    <!-- AIAgentStudio -->
+    <div class="cs-card">
+      <div class="browser-bar"><div class="browser-dots"><span class="browser-dot bd-red"></span><span class="browser-dot bd-yellow"></span><span class="browser-dot bd-green"></span></div><div class="browser-url">aiagentstudio.ai</div></div>
+      <div class="cs-screenshot">
+        <img src="https://api.screenshotmachine.com/?key=demo&dimension=1200x750&device=desktop&format=jpg&url=https://aiagentstudio.ai" alt="AIAgentStudio screenshot" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="cs-screenshot-loading" style="display:flex"><span class="site-icon">🤖</span><span class="site-label">aiagentstudio.ai</span></div>
+      </div>
+      <div class="cs-body">
+        <div class="cs-meta">AI SaaS · No-Code · India-first · Seed Stage</div>
+        <div class="cs-title">AIAgentStudio: No-Code Visual AI Agent Builder</div>
+        <div class="cs-block"><div class="cs-label">Problem</div><div class="cs-text">Non-technical founders couldn't build AI agents without deep engineering resources — costly developers or US-centric integrations that didn't work in India.</div></div>
+        <div class="cs-block"><div class="cs-label">Approach</div><div class="cs-text">Visual drag-and-drop canvas with AI co-founder chat that scaffolds agent logic from plain English. India-first: Razorpay, WhatsApp Business API, GST APIs, Tally. Agent template marketplace with creator revenue-share via Stripe Connect.</div></div>
+        <div class="cs-block"><div class="cs-label">Metrics I'd Measure</div><div class="cs-text">Agent activation rate, template marketplace GMV, MRR growth vs. 00K target, NPS from India SMB cohort.</div></div>
+        <div class="cs-metrics">
+          <div><span class="cs-metric-val">82</span><span class="cs-metric-label">Commits</span></div>
+          <div><span class="cs-metric-val">9/mo</span><span class="cs-metric-label">Pricing</span></div>
+          <div><span class="cs-metric-val">00K</span><span class="cs-metric-label">MRR target</span></div>
+        </div>
+        <div class="card-tags"><span class="tag tag-blue">AI / LLM</span><span class="tag tag-gray">TypeScript</span><span class="tag tag-gray">No-Code</span><span class="tag tag-gray">India SaaS</span></div>
+        <a class="cs-link" href="https://aiagentstudio.ai" target="_blank">aiagentstudio.ai →</a>
+      </div>
+    </div>
+
+    <!-- MedPe -->
+    <div class="cs-card">
+      <div class="browser-bar"><div class="browser-dots"><span class="browser-dot bd-red"></span><span class="browser-dot bd-yellow"></span><span class="browser-dot bd-green"></span></div><div class="browser-url">medpe.in</div></div>
+      <div class="cs-screenshot">
+        <img src="https://api.screenshotmachine.com/?key=demo&dimension=1200x750&device=desktop&format=jpg&url=https://medpe.in" alt="MedPe screenshot" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="cs-screenshot-loading" style="display:flex"><span class="site-icon">🏥</span><span class="site-label">medpe.in</span></div>
+      </div>
+      <div class="cs-body">
+        <div class="cs-meta">Telehealth · India · Healthtech · Consumer</div>
+        <div class="cs-title">MedPe: Telehealth Platform for Bharat</div>
+        <div class="cs-block"><div class="cs-label">Problem</div><div class="cs-text">Indian patients lacked affordable, trustworthy access to online doctor consultations with legally compliant digital prescriptions.</div></div>
+        <div class="cs-block"><div class="cs-label">Approach</div><div class="cs-text">Privacy-first platform with instant slot booking, UPI-native checkout, digital prescriptions and specialist referral flow. PDPB compliant from day one.</div></div>
+        <div class="cs-block"><div class="cs-label">Metrics I'd Measure</div><div class="cs-text">Consultation completion rate, repeat visit rate, prescription download rate, UPI payment success rate, CAC vs. LTV.</div></div>
+        <div class="card-tags"><span class="tag tag-blue">Telehealth</span><span class="tag tag-gray">Razorpay</span><span class="tag tag-gray">UPI</span><span class="tag tag-gray">PDPB</span></div>
+        <a class="cs-link" href="https://medpe.in" target="_blank">medpe.in →</a>
+      </div>
+    </div>
+
+    <!-- BookMyHelicopter -->
+    <div class="cs-card">
+      <div class="browser-bar"><div class="browser-dots"><span class="browser-dot bd-red"></span><span class="browser-dot bd-yellow"></span><span class="browser-dot bd-green"></span></div><div class="browser-url">bookmyhelicopter.in</div></div>
+      <div class="cs-screenshot">
+        <img src="https://api.screenshotmachine.com/?key=demo&dimension=1200x750&device=desktop&format=jpg&url=https://bookmyhelicopter.in" alt="BookMyHelicopter screenshot" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="cs-screenshot-loading" style="display:flex"><span class="site-icon">🚁</span><span class="site-label">bookmyhelicopter.in</span></div>
+      </div>
+      <div class="cs-body">
+        <div class="cs-meta">B2G · Marketplace · Travel India · Maharashtra</div>
+        <div class="cs-title">BookMyHelicopter: B2G Aggregator for Kumbh Mela 2027</div>
+        <div class="cs-block"><div class="cs-label">Problem</div><div class="cs-text">No neutral platform aggregated helicopter operators across India's pilgrimage, corporate, tourism, and emergency verticals.</div></div>
+        <div class="cs-block"><div class="cs-label">Approach</div><div class="cs-text">Used Kumbh Mela 2027 as a forcing function — pitched to the Authority, structured Maharashtra Govt. EOI, signed 8+ operators. Consumer bookings as parallel revenue while B2G pipeline matures.</div></div>
+        <div class="cs-block"><div class="cs-label">Metrics I'd Measure</div><div class="cs-text">Operator GMV, Kumbh 2027 booking volume, government contract value, consumer repeat booking rate.</div></div>
+        <div class="cs-metrics">
+          <div><span class="cs-metric-val">8+</span><span class="cs-metric-label">Operators</span></div>
+          <div><span class="cs-metric-val">4</span><span class="cs-metric-label">Verticals</span></div>
+          <div><span class="cs-metric-val">B2G</span><span class="cs-metric-label">Govt. EOI</span></div>
+        </div>
+        <div class="card-tags"><span class="tag tag-blue">B2G</span><span class="tag tag-gray">Marketplace</span><span class="tag tag-gray">Kumbh 2027</span><span class="tag tag-gray">Govt. EOI</span></div>
+        <a class="cs-link" href="https://bookmyhelicopter.in" target="_blank">bookmyhelicopter.in →</a>
+      </div>
+    </div>
+
+    <!-- AILearnX -->
+    <div class="cs-card">
+      <div class="browser-bar"><div class="browser-dots"><span class="browser-dot bd-red"></span><span class="browser-dot bd-yellow"></span><span class="browser-dot bd-green"></span></div><div class="browser-url">ailearnx.com</div></div>
+      <div class="cs-screenshot">
+        <img src="https://api.screenshotmachine.com/?key=demo&dimension=1200x750&device=desktop&format=jpg&url=https://ailearnx.com" alt="AILearnX screenshot" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="cs-screenshot-loading" style="display:flex"><span class="site-icon">🧠</span><span class="site-label">ailearnx.com</span></div>
+      </div>
+      <div class="cs-body">
+        <div class="cs-meta">AI Learning · Platform · Perplexity AI Fellowship</div>
+        <div class="cs-title">AILearnX: AI Learning Platform Selected by Perplexity AI</div>
+        <div class="cs-block"><div class="cs-label">Problem</div><div class="cs-text">AI professionals had to stitch together Coursera, LinkedIn, Kaggle, and Discord. No single destination served the full professional AI journey.</div></div>
+        <div class="cs-block"><div class="cs-label">Approach</div><div class="cs-text">Unified platform: courses, jobs board, competitions, mentorship, events, AI tools directory, AI agents marketplace. Community-first to create cross-surface network effects. Selected by Perplexity AI Business Fellowship.</div></div>
+        <div class="cs-block"><div class="cs-label">Metrics I'd Measure</div><div class="cs-text">Weekly active learners, job-placement rate, cross-surface engagement (users using 2+ features), mentor booking rate.</div></div>
+        <div class="card-tags"><span class="tag tag-blue">Perplexity Fellow</span><span class="tag tag-gray">AI Education</span><span class="tag tag-gray">Jobs Board</span><span class="tag tag-gray">Community</span></div>
+        <a class="cs-link" href="https://ailearnx.com" target="_blank">ailearnx.com →</a>
+      </div>
+    </div>
+
+    <!-- InstaChat -->
+    <div class="cs-card">
+      <div class="browser-bar"><div class="browser-dots"><span class="browser-dot bd-red"></span><span class="browser-dot bd-yellow"></span><span class="browser-dot bd-green"></span></div><div class="browser-url">Play Store · InstaChat</div></div>
+      <div class="cs-screenshot">
+        <img src="https://api.screenshotmachine.com/?key=demo&dimension=1200x750&device=desktop&format=jpg&url=https://play.google.com/store/apps/details?id=com.devlomi.instachatt" alt="InstaChat screenshot" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="cs-screenshot-loading" style="display:flex"><span class="site-icon">💬</span><span class="site-label">InstaChat · Play Store</span></div>
+      </div>
+      <div class="cs-body">
+        <div class="cs-meta">Android · Consumer · Messaging · Made in India</div>
+        <div class="cs-title">InstaChat: Secure Messenger — 1K+ Downloads, 4.2★</div>
+        <div class="cs-block"><div class="cs-label">Problem</div><div class="cs-text">Indian users wanted a secure messaging alternative that kept data local, complied with Indian privacy laws, and offered free voice/video calls.</div></div>
+        <div class="cs-block"><div class="cs-label">Approach</div><div class="cs-text">Published under RAC Innovation Inc. E2E secure messaging, free voice & video, offline message queue, PDPB compliance. Made-in-India positioning as a trust signal in a privacy-sensitive category.</div></div>
+        <div class="cs-block"><div class="cs-label">Metrics I'd Measure</div><div class="cs-text">DAU/MAU ratio, message send rate, call initiation rate, D7/D30 retention, Play Store rating trajectory.</div></div>
+        <div class="cs-metrics">
+          <div><span class="cs-metric-val">1K+</span><span class="cs-metric-label">Downloads</span></div>
+          <div><span class="cs-metric-val">4.2★</span><span class="cs-metric-label">Rating</span></div>
+          <div><span class="cs-metric-val">31</span><span class="cs-metric-label">Reviews</span></div>
+        </div>
+        <div class="card-tags"><span class="tag tag-blue">Android</span><span class="tag tag-gray">Messaging</span><span class="tag tag-gray">Made in India</span></div>
+        <a class="cs-link" href="https://play.google.com/store/apps/details?id=com.devlomi.instachatt" target="_blank">View on Play Store →</a>
+      </div>
+    </div>
+
+    <!-- InstaHealthyKart -->
+    <div class="cs-card">
+      <div class="browser-bar"><div class="browser-dots"><span class="browser-dot bd-red"></span><span class="browser-dot bd-yellow"></span><span class="browser-dot bd-green"></span></div><div class="browser-url">instahealthykart.com</div></div>
+      <div class="cs-screenshot">
+        <img src="https://api.screenshotmachine.com/?key=demo&dimension=1200x750&device=desktop&format=jpg&url=https://instahealthykart.com" alt="InstaHealthyKart screenshot" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="cs-screenshot-loading" style="display:flex"><span class="site-icon">🥗</span><span class="site-label">instahealthykart.com</span></div>
+      </div>
+      <div class="cs-body">
+        <div class="cs-meta">E-Commerce · D2C · India Wellness · Consumer</div>
+        <div class="cs-title">InstaHealthyKart: Chemical-Free Wellness D2C Platform</div>
+        <div class="cs-block"><div class="cs-label">Problem</div><div class="cs-text">India's health-conscious consumers had no trusted, curated D2C source for chemical-free wellness products — greenwashing, opaque ingredients, fragmented discovery.</div></div>
+        <div class="cs-block"><div class="cs-label">Approach</div><div class="cs-text">Full D2C stack: curated catalogue, cart, checkout, fulfilment. Razorpay, UPI, and COD for maximum checkout conversion. Drop-shipping model to manage inventory risk.</div></div>
+        <div class="cs-block"><div class="cs-label">Metrics I'd Measure</div><div class="cs-text">Checkout conversion rate, COD vs. prepaid ratio, repeat purchase rate, cart abandonment rate, return rate.</div></div>
+        <div class="card-tags"><span class="tag tag-blue">D2C India</span><span class="tag tag-gray">E-Commerce</span><span class="tag tag-gray">Razorpay</span><span class="tag tag-gray">Wellness</span></div>
+        <a class="cs-link" href="https://instahealthykart.com" target="_blank">instahealthykart.com →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-wrap">
+    <div class="footer-inner">
+      <h2>Ready to build something remarkable?</h2>
+      <p>9 live products. Perplexity AI Fellow. Open globally from Pune, India.</p>
+      <button class="btn btn-blue" onclick="showPage('contact')">Get in touch →</button>
+      <div class="footer-links">
+        <a href="https://github.com/rahulchhallare" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/rahulchhallare" target="_blank">LinkedIn</a>
+        <a onclick="showPage('contact')">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 Rahul Chhallare · AI Product Manager · Pune, India</div>
+</div>
+
+<!-- ══════════════ ABOUT ══════════════ -->
+<div id="page-about" class="page">
+  <div class="page-hero">
+    <div class="page-eyebrow">About</div>
+    <h1>Builder who ships.<br>Founder who teaches.</h1>
+    <p>Full-time founder and AI product manager based in Pune, India. 9 live products. Perplexity AI Fellow. MBA from Germany.</p>
+  </div>
+  <hr class="divider"/>
+  <div class="about-outer">
+    <div class="about-inner">
+      <div>
+        <div class="about-photo-wrap">
+          <img src="data:image/png;base64,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" alt="Rahul Chhallare"/>
+        </div>
+        <div class="about-caption">
+          <div class="name">Rahul Chhallare</div>
+          <div class="role">AI Agent PM · Forward Deployed PM</div>
+          <div class="loc">📍 Pune — Open globally</div>
+        </div>
+      </div>
+      <div class="about-text">
+        <h2>From enterprise PM to serial AI founder.</h2>
+        <p>I'm a <strong>full-time founder and AI product manager</strong> based in Pune, India, building products at the frontier of AI.</p>
+        <p>I founded <strong>AIAgentStudio.ai</strong>, a no-code visual AI agent builder built in TypeScript from a blank repo to full production. I've shipped <strong>9 live products</strong> across AI SaaS, telehealth, health e-commerce, travel, and messaging — every one built end-to-end without an external engineering team.</p>
+        <p>I'm a <strong>Perplexity AI Business Fellow</strong>, and I run India's first <strong>Certified AI PM (CAIPM) program</strong> through Eduinx — 15+ professionals certified in LLM product design and agent architectures.</p>
+        <p>I hold an <strong>MBA from TU Nürnberg, Germany</strong> and a B.E. in Instrumentation Engineering from the University of Pune.</p>
+        <div class="creds-list">
+          <div class="cred-card"><div class="cred-icon">🔬</div><div><div class="cred-name">Perplexity AI Business Fellowship</div><div class="cred-org">Perplexity AI · 2025</div><div class="cred-note">Competitively selected. AILearnX.com selected as part of the fellowship.</div></div></div>
+          <div class="cred-card"><div class="cred-icon">🎓</div><div><div class="cred-name">MBA — Business Administration</div><div class="cred-org">Technical University Nürnberg, Germany</div><div class="cred-note">International MBA · Technology Management · Entrepreneurship</div></div></div>
+          <div class="cred-card"><div class="cred-icon">⚙️</div><div><div class="cred-name">B.E. — Instrumentation Engineering</div><div class="cred-org">University of Pune</div><div class="cred-note">Systems design · Automation · Engineering foundations</div></div></div>
+          <div class="cred-card"><div class="cred-icon">📋</div><div><div class="cred-name">CAIPM Program — Founder &amp; Instructor</div><div class="cred-org">Eduinx · India's first Certified AI PM program</div><div class="cred-note">15+ professionals certified in LLM product design and agent architectures.</div></div></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="divider"/>
+
+  <!-- 9 products with screenshots -->
+  <div class="products-mini-wrap">
+    <h2>9 live products</h2>
+    <div class="products-mini-grid">
+
+      <a href="https://aiagentstudio.ai" target="_blank" class="product-mini">
+        <div class="pm-screenshot"><img src="https://api.screenshotmachine.com/?key=demo&dimension=900x560&device=desktop&format=jpg&url=https://aiagentstudio.ai" alt="AIAgentStudio" loading="lazy" onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-size:2rem\'>🤖</div>'"/></div>
+        <div class="pm-body"><div class="pm-header"><span class="pm-icon">🤖</span><div><div class="pm-name">AIAgentStudio.ai</div><div class="pm-url">aiagentstudio.ai</div></div></div><p class="pm-desc">No-code visual AI agent builder. Drag-and-drop canvas + AI co-founder chat.</p><div class="card-tags"><span class="tag tag-blue">AI / LLM</span><span class="tag tag-gray">Seed</span></div></div>
+      </a>
+
+      <a href="https://ailearnx.com" target="_blank" class="product-mini">
+        <div class="pm-screenshot"><img src="https://api.screenshotmachine.com/?key=demo&dimension=900x560&device=desktop&format=jpg&url=https://ailearnx.com" alt="AILearnX" loading="lazy" onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-size:2rem\'>🧠</div>'"/></div>
+        <div class="pm-body"><div class="pm-header"><span class="pm-icon">🧠</span><div><div class="pm-name">AILearnX.com</div><div class="pm-url">ailearnx.com</div></div></div><p class="pm-desc">AI learning platform. Perplexity AI Fellow selected.</p><div class="card-tags"><span class="tag tag-blue">Perplexity Fellow</span></div></div>
+      </a>
+
+      <a href="https://medpe.in" target="_blank" class="product-mini">
+        <div class="pm-screenshot"><img src="https://api.screenshotmachine.com/?key=demo&dimension=900x560&device=desktop&format=jpg&url=https://medpe.in" alt="MedPe" loading="lazy" onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-size:2rem\'>🏥</div>'"/></div>
+        <div class="pm-body"><div class="pm-header"><span class="pm-icon">🏥</span><div><div class="pm-name">MedPe.in</div><div class="pm-url">medpe.in</div></div></div><p class="pm-desc">India-first telehealth. Online consultations, UPI payments.</p><div class="card-tags"><span class="tag tag-blue">Telehealth</span><span class="tag tag-gray">India</span></div></div>
+      </a>
+
+      <a href="https://play.google.com/store/apps/details?id=com.devlomi.instachatt" target="_blank" class="product-mini">
+        <div class="pm-screenshot"><img src="https://api.screenshotmachine.com/?key=demo&dimension=900x560&device=desktop&format=jpg&url=https://play.google.com/store/apps/details?id=com.devlomi.instachatt" alt="InstaChat" loading="lazy" onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-size:2rem\'>💬</div>'"/></div>
+        <div class="pm-body"><div class="pm-header"><span class="pm-icon">💬</span><div><div class="pm-name">InstaChat</div><div class="pm-url">Play Store · 1K+ · 4.2★</div></div></div><p class="pm-desc">Secure Android messenger. Made in India.</p><div class="card-tags"><span class="tag tag-blue">Android</span><span class="tag tag-gray">Messaging</span></div></div>
+      </a>
+
+      <a href="https://instahealthykart.com" target="_blank" class="product-mini">
+        <div class="pm-screenshot"><img src="https://api.screenshotmachine.com/?key=demo&dimension=900x560&device=desktop&format=jpg&url=https://instahealthykart.com" alt="InstaHealthyKart" loading="lazy" onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-size:2rem\'>🥗</div>'"/></div>
+        <div class="pm-body"><div class="pm-header"><span class="pm-icon">🥗</span><div><div class="pm-name">InstaHealthyKart.com</div><div class="pm-url">instahealthykart.com</div></div></div><p class="pm-desc">Chemical-free wellness D2C e-commerce.</p><div class="card-tags"><span class="tag tag-blue">D2C India</span><span class="tag tag-gray">Wellness</span></div></div>
+      </a>
+
+      <a href="https://bookmyhelicopter.in" target="_blank" class="product-mini">
+        <div class="pm-screenshot"><img src="https://api.screenshotmachine.com/?key=demo&dimension=900x560&device=desktop&format=jpg&url=https://bookmyhelicopter.in" alt="BookMyHelicopter" loading="lazy" onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-size:2rem\'>🚁</div>'"/></div>
+        <div class="pm-body"><div class="pm-header"><span class="pm-icon">🚁</span><div><div class="pm-name">BookMyHelicopter.in</div><div class="pm-url">bookmyhelicopter.in</div></div></div><p class="pm-desc">India's helicopter booking aggregator. B2G.</p><div class="card-tags"><span class="tag tag-blue">B2G</span><span class="tag tag-gray">Marketplace</span></div></div>
+      </a>
+
+      <a href="https://hire-ai-staff.vercel.app" target="_blank" class="product-mini">
+        <div class="pm-screenshot"><img src="https://api.screenshotmachine.com/?key=demo&dimension=900x560&device=desktop&format=jpg&url=https://hire-ai-staff.vercel.app" alt="HireAIStaff" loading="lazy" onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-size:2rem\'>👥</div>'"/></div>
+        <div class="pm-body"><div class="pm-header"><span class="pm-icon">👥</span><div><div class="pm-name">HireAIStaff</div><div class="pm-url">hire-ai-staff.vercel.app</div></div></div><p class="pm-desc">Hire an AI employee in 60 seconds. 99–99/mo.</p><div class="card-tags"><span class="tag tag-blue">AI SaaS</span><span class="tag tag-gray">Next.js</span></div></div>
+      </a>
+
+      <a href="https://github.com/rahulchhallare" target="_blank" class="product-mini">
+        <div class="pm-screenshot"><img src="https://api.screenshotmachine.com/?key=demo&dimension=900x560&device=desktop&format=jpg&url=https://github.com/rahulchhallare" alt="GitHub" loading="lazy" onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-size:2rem\'>💻</div>'"/></div>
+        <div class="pm-body"><div class="pm-header"><span class="pm-icon">💻</span><div><div class="pm-name">GitHub — 15 Repos</div><div class="pm-url">github.com/rahulchhallare</div></div></div><p class="pm-desc">TypeScript-dominant, production-deployed repositories.</p><div class="card-tags"><span class="tag tag-blue">TypeScript</span><span class="tag tag-gray">Open Source</span></div></div>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="footer-wrap">
+    <div class="footer-inner">
+      <h2>Ready to build something remarkable?</h2>
+      <p>9 live products. Perplexity AI Fellow. Open globally from Pune, India.</p>
+      <button class="btn btn-blue" onclick="showPage('contact')">Get in touch →</button>
+      <div class="footer-links">
+        <a href="https://github.com/rahulchhallare" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/rahulchhallare" target="_blank">LinkedIn</a>
+        <a onclick="showPage('contact')">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 Rahul Chhallare · AI Product Manager · Pune, India</div>
+</div>
+
+<!-- ══════════════ CONTACT ══════════════ -->
+<div id="page-contact" class="page">
+  <div class="page-hero">
+    <div class="page-eyebrow">Contact</div>
+    <h1>Let's build something<br>remarkable together.</h1>
+    <p>Open to AI Agent PM, Forward Deployed PM, Product Owner, and Head of Product roles globally.</p>
+  </div>
+  <hr class="divider"/>
+  <div class="contact-wrap">
+    <div class="contact-col">
+      <h2>Get in touch</h2>
+      <a class="contact-item" href="tel:+919561745581">
+        <div class="ci-icon">📱</div>
+        <div><div class="ci-label">Mobile</div><div class="ci-value">+91 9561745581</div><div class="ci-note">Available Mon–Sat, 9am–7pm IST</div></div>
+      </a>
+      <a class="contact-item" href="mailto:rchhallare9@gmail.com">
+        <div class="ci-icon">✉️</div>
+        <div><div class="ci-label">Email</div><div class="ci-value">rchhallare9@gmail.com</div><div class="ci-note">For product roles, partnerships &amp; collaborations</div></div>
+      </a>
+      <a class="contact-item">
+        <div class="ci-icon">📍</div>
+        <div><div class="ci-label">Location</div><div class="ci-value">Pune, Maharashtra, India</div><div class="ci-note">Open to remote &amp; global opportunities</div></div>
+      </a>
+      <div class="social-head">Find me online</div>
+      <a class="social-link" href="https://www.linkedin.com/in/rahulchhallare" target="_blank"><span class="sl-icon">💼</span><span class="sl-label">LinkedIn</span><span class="sl-url">linkedin.com/in/rahulchhallare</span></a>
+      <a class="social-link" href="https://github.com/rahulchhallare" target="_blank"><span class="sl-icon">🐙</span><span class="sl-label">GitHub</span><span class="sl-url">github.com/rahulchhallare</span></a>
+      <a class="social-link" href="https://aiagentstudio.ai" target="_blank"><span class="sl-icon">🤖</span><span class="sl-label">AIAgentStudio.ai</span><span class="sl-url">aiagentstudio.ai</span></a>
+      <a class="social-link" href="https://ailearnx.com" target="_blank"><span class="sl-icon">🧠</span><span class="sl-label">AILearnX.com</span><span class="sl-url">ailearnx.com</span></a>
+    </div>
+    <div>
+      <div class="open-to-card">
+        <div class="avail-badge"><span class="avail-dot"></span>Available for new opportunities</div>
+        <h2>Open to these roles</h2>
+        <p>Founder execution + enterprise PM rigour + deep AI technical fluency. Looking for roles where I can build and ship.</p>
+        <div class="roles-list">
+          <div class="role-item"><span class="role-dot"></span>AI Agent PM</div>
+          <div class="role-item"><span class="role-dot"></span>Forward Deployed PM</div>
+          <div class="role-item"><span class="role-dot"></span>Product Owner · AI Systems</div>
+          <div class="role-item"><span class="role-dot"></span>Head of Product · AI Startup</div>
+          <div class="role-item"><span class="role-dot"></span>Solutions PM</div>
+          <div class="role-item"><span class="role-dot"></span>AI Product Advisory</div>
+        </div>
+        <a href="mailto:rchhallare9@gmail.com" class="btn btn-blue btn-full">Email me →</a>
+        <div class="stats-mini">
+          <div class="stat-mini"><span class="stat-mini-val">9</span><span class="stat-mini-label">Live products</span></div>
+          <div class="stat-mini"><span class="stat-mini-val">5+</span><span class="stat-mini-label">Years in product</span></div>
+          <div class="stat-mini"><span class="stat-mini-val">15+</span><span class="stat-mini-label">PMs certified</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-wrap">
+    <div class="footer-inner">
+      <h2>© 2026 Rahul Chhallare</h2>
+      <p>AI Product Manager · Multi-Venture Founder · Pune, India</p>
+      <div class="footer-links">
+        <a onclick="showPage('home')">Home</a>
+        <a onclick="showPage('case-studies')">Case Studies</a>
+        <a onclick="showPage('about')">About</a>
+        <a href="https://github.com/rahulchhallare" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/rahulchhallare" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 Rahul Chhallare · AI Product Manager · Pune, India</div>
+</div>
 
 <script>
-/* ── Core scroll function — works inside any iframe ── */
-function navTo(id) {
-  var el = document.getElementById(id);
-  if (!el) return;
-  var top = el.getBoundingClientRect().top + window.pageYOffset - 68;
-  window.scrollTo({ top: top, behavior: 'smooth' });
-}
-
-/* ── Mobile nav ── */
-function toggleNav() {
-  document.getElementById('mobnav').classList.toggle('open');
-}
-function closeNav() {
-  document.getElementById('mobnav').classList.remove('open');
-}
-
-/* ── Timeline tabs ── */
-function showPanel(btn, id) {
-  var btns = document.querySelectorAll('.tlbtn');
-  for (var i = 0; i < btns.length; i++) btns[i].classList.remove('on');
-  var panels = document.querySelectorAll('.tpanel');
-  for (var j = 0; j < panels.length; j++) panels[j].classList.remove('on');
-  btn.classList.add('on');
-  document.getElementById(id).classList.add('on');
-}
-
-/* ── Scroll reveal ── */
-if ('IntersectionObserver' in window) {
-  var observer = new IntersectionObserver(function(entries) {
-    for (var i = 0; i < entries.length; i++) {
-      if (entries[i].isIntersecting) {
-        entries[i].target.classList.add('in');
-        observer.unobserve(entries[i].target);
-      }
-    }
-  }, { threshold: 0.08 });
-  var fadeEls = document.querySelectorAll('.fade');
-  for (var k = 0; k < fadeEls.length; k++) observer.observe(fadeEls[k]);
+function showPage(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById('page-'+id).classList.add('active');
+  document.querySelectorAll('.nav-links li a').forEach(a=>a.classList.remove('active'));
+  var el=document.getElementById('nav-'+id);
+  if(el) el.classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
 }
 </script>
-<!--
-HOW TO PUBLISH THIS PORTFOLIO (FREE SHAREABLE URL)
-===================================================
-OPTION 1 — GitHub Pages → https://rahulchhallare.github.io
-  1. Create repo named: rahulchhallare.github.io on github.com/rahulchhallare
-  2. Upload this file as: index.html
-  3. Settings → Pages → Source: main branch → Save
-  4. Live in ~2 min. Share on LinkedIn, WhatsApp, email.
-
-OPTION 2 — Netlify → netlify.com → "Deploy manually" → drag this file
-  Instant URL like: https://rahul-portfolio.netlify.app
-
-OPTION 3 — Vercel → vercel.com → New Project → drag this file
-  Instant URL like: https://rahul-chhallare.vercel.app
-===================================================
--->
 </body>
 </html>
